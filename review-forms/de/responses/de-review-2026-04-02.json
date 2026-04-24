@@ -1,0 +1,1472 @@
+{
+  "lang": "de",
+  "date": "2026-04-02",
+  "app": "Spinal Instrumentation Plan & Record",
+  "reviewer": {
+    "name": "Vicky Portner",
+    "role": "industry",
+    "institution": "Stryker Spine / VB Germany",
+    "country": "Germany",
+    "anonymous": false
+  },
+  "items": {
+    "portrait.tab.construct": {
+      "translation": "Konstrukt",
+      "original": "Konstrukt",
+      "status": "correct",
+      "comment": null
+    },
+    "portrait.tab.demographics": {
+      "translation": "Patientendaten",
+      "original": "Demografie",
+      "status": "corrected",
+      "comment": null
+    },
+    "portrait.tab.plan": {
+      "translation": "Plan",
+      "original": "Plan",
+      "status": "correct",
+      "comment": null
+    },
+    "portrait.view_only": {
+      "translation": "Auf dieser Bildschirmgröße nur Ansicht möglich. Zum Bearbeiten bitte ein Tablet oder einen Desktop verwenden.",
+      "original": "Nur Ansicht bei dieser Bildschirmgröße. Verwenden Sie ein Tablet oder einen Desktop zum Bearbeiten.",
+      "status": "corrected",
+      "comment": null
+    },
+    "portrait.view_only_short": {
+      "translation": "Nur Ansicht",
+      "original": "Nur Ansicht",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.actions": {
+      "translation": "Aktionen",
+      "original": "Aktionen",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.category.annotations": {
+      "translation": "Anmerkungen",
+      "original": "Anmerkungen",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.category.implants": {
+      "translation": "Implantate",
+      "original": "Implantate",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.category.tools": {
+      "translation": "Werkzeuge",
+      "original": "Werkzeuge",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.confirm_all": {
+      "translation": "Plan bestätigen",
+      "original": "Plan bestätigen",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.confirm_plan_tooltip": {
+      "translation": "Alle verbleibenden geplanten Platzierungen in den Konstruktbericht übernehmen",
+      "original": "Alle verbleibenden geplanten Platzierungen in den Konstruktbericht übernehmen",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.construct": {
+      "translation": "Konstrukt",
+      "original": "Konstrukt",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.copy_plan": {
+      "translation": "Plan in Konstruktion übernehmen",
+      "original": "Plan in Konstrukt kop.",
+      "status": "corrected",
+      "comment": null
+    },
+    "sidebar.editing": {
+      "translation": "Bearbeitung",
+      "original": "Bearbeitung",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.editing_hint": {
+      "translation": "Wählen Sie das zu bearbeitende Diagramm. Klicks und Werkzeuge gelten für das aktive Diagramm.",
+      "original": "Wählen Sie das zu bearbeitende Diagramm. Klicks und Werkzeuge gelten für das aktive Diagramm.",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.help": {
+      "translation": "Hilfe",
+      "original": "Hilfe",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.language": {
+      "translation": "Sprache",
+      "original": "Sprache",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.load": {
+      "translation": "Laden",
+      "original": "Laden",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.new_patient": {
+      "translation": "Neuer Patient",
+      "original": "Neuer Patient",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.plan": {
+      "translation": "Plan",
+      "original": "Plan",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.region_view": {
+      "translation": "Bereichsansicht",
+      "original": "Ansicht",
+      "status": "corrected",
+      "comment": null
+    },
+    "sidebar.save": {
+      "translation": "Speichern",
+      "original": "Speichern",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.session_privacy": {
+      "translation": "Sitzungsdatenschutz",
+      "original": "Sitzungsdatenschutz",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.theme": {
+      "translation": "Farbschema",
+      "original": "Farbschema",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.title": {
+      "translation": "Spinale Instrumentierung",
+      "original": "Spinale Instrumentierung",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.view.cervical": {
+      "translation": "Zervikal (Occ-T4)",
+      "original": "Zervikal (Occ-T4)",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.view.t10_pelvis": {
+      "translation": "Lumbal (T10-Becken)",
+      "original": "Lumbal (T10-Becken)",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.view.thoracolumbar": {
+      "translation": "Thorakolumbal (T1-Becken)",
+      "original": "Thorakolumbal (T1-Becken)",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.view.whole": {
+      "translation": "Gesamte Wirbelsäule",
+      "original": "Gesamte Wirbelsäule",
+      "status": "correct",
+      "comment": null
+    },
+    "sidebar.view.whole_short": {
+      "translation": "Alles",
+      "original": "Alle",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.bone_graft.allograft": {
+      "translation": "Allograft",
+      "original": "Allograft",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.bone_graft.autograft": {
+      "translation": "Autograft",
+      "original": "Autograft",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.bone_graft.local_bone": {
+      "translation": "Lokaler Knochen",
+      "original": "Lokaler Knochen",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.bone_graft.synthetics": {
+      "translation": "Synthetisch",
+      "original": "Synthetisch",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.bone_graft": {
+      "translation": "Knochenersatzmaterial",
+      "original": "Knochentransplantat",
+      "status": "corrected",
+      "comment": null
+    },
+    "patient.bone_graft_notes_placeholder": {
+      "translation": "Weitere Informationen...",
+      "original": "Weitere Details...",
+      "status": "corrected",
+      "comment": null
+    },
+    "patient.click_to_enter": {
+      "translation": "Zum Eingeben klicken…",
+      "original": "Klicken zum Eingeben...",
+      "status": "corrected",
+      "comment": null
+    },
+    "patient.date": {
+      "translation": "Datum",
+      "original": "Datum",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.enter_company": {
+      "translation": "Firmenname eingeben...",
+      "original": "Firmenname eingeben...",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.id": {
+      "translation": "Patienten-ID",
+      "original": "Patienten-ID",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.name": {
+      "translation": "Patientenname",
+      "original": "Patientenname",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.other": {
+      "translation": "Sonstiges",
+      "original": "Andere",
+      "status": "corrected",
+      "comment": null
+    },
+    "patient.other_companies": {
+      "translation": "Andere Hersteller",
+      "original": "Andere Hersteller",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.rod": {
+      "translation": "Stab",
+      "original": "Stab",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.rod_left_placeholder": {
+      "translation": "z.B. 5,5mm CoCr-Stab",
+      "original": "z.B. 5,5mm CoCr-Stab",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.rod_right_placeholder": {
+      "translation": "z.B. 5,5mm TiAlV-Schiene",
+      "original": "z.B. 5,5mm TiAlV-Schiene",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.screw_system": {
+      "translation": "Schraubensystem",
+      "original": "Schraubensystem",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.screw_system_placeholder": {
+      "translation": "z.B. Expedium, Solera, Xia",
+      "original": "z.B. Expedium, Solera, Xia",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.select_supplier": {
+      "translation": "Hersteller auswählen...",
+      "original": "Hersteller wählen...",
+      "status": "corrected",
+      "comment": null
+    },
+    "patient.supplier": {
+      "translation": "Implantathersteller",
+      "original": "Implantathersteller",
+      "status": "correct",
+      "comment": null
+    },
+    "patient.surgeon": {
+      "translation": "Operateur",
+      "original": "Operateur",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.fixation.band": {
+      "translation": "Band",
+      "original": "Band",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.fixation.cable": {
+      "translation": "Kabel",
+      "original": "Kabel",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.fixation.wire": {
+      "translation": "Draht",
+      "original": "Draht",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.hook.il_hook": {
+      "translation": "Infra-lam.",
+      "original": "Infra-lam.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.hook.pedicle_hook": {
+      "translation": "Pedikel",
+      "original": "Pedikel",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.hook.sl_hook": {
+      "translation": "Supra-lam.",
+      "original": "Supra-lam.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.hook.tp_hook": {
+      "translation": "QF (Runter)",
+      "original": "QF (Ab)",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.hook.tp_hook_up": {
+      "translation": "QF (Hoch)",
+      "original": "QF (Auf)",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.screw.monoaxial": {
+      "translation": "Monoaxial",
+      "original": "Monoaxial",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.screw.monoaxial.short": {
+      "translation": "Mono",
+      "original": "Mono",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.screw.polyaxial": {
+      "translation": "Polyaxial",
+      "original": "Polyaxial",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.screw.polyaxial.short": {
+      "translation": "Poly",
+      "original": "Poly",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.screw.uniplanar": {
+      "translation": "Uniplanar",
+      "original": "Uniplanar",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.annotation": {
+      "translation": "Anmerkung",
+      "original": "Anmerkung",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.annotation_placeholder": {
+      "translation": "z.B. fenestriert, kortikal, Revision",
+      "original": "z.B. fenestriert, kortikal, Revision",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.custom_placeholder": {
+      "translation": "z.B. 8,0x110",
+      "original": "z.B. 8,0x110",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.description": {
+      "translation": "Beschreibung",
+      "original": "Beschreibung",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.description_placeholder": {
+      "translation": "z.B. 16g, sublaminar",
+      "original": "z.B. 16g, sublaminar",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.hook_no_sizing": {
+      "translation": "Hakenplatzierung — ohne Größenangabe.",
+      "original": "Hakenplatzierung — ohne Größenangabe.",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.icon_only": {
+      "translation": "Nur Symbol. Keine Beschriftung.",
+      "original": "Nur Symbol. Kein Label.",
+      "status": "corrected",
+      "comment": null
+    },
+    "modal.screw.mode_custom": {
+      "translation": "Benutzerdefiniert",
+      "original": "Benutzerdefiniert",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.mode_none": {
+      "translation": "Ohne Größe",
+      "original": "Ohne Größe",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.mode_standard": {
+      "translation": "Standard",
+      "original": "Standard",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.section_bands": {
+      "translation": "Bänder & Sonstige",
+      "original": "Bänder & Sonstige",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.section_hooks": {
+      "translation": "Haken",
+      "original": "Haken",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.section_screws": {
+      "translation": "Schrauben",
+      "original": "Schrauben",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.title_edit": {
+      "translation": "Implantat bearbeiten",
+      "original": "Implantat bearbeiten",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.screw.title_new": {
+      "translation": "Implantat wählen",
+      "original": "Implantat wählen",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.approach.anterior": {
+      "translation": "Anterior",
+      "original": "Anterior",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.approach.anterior.desc": {
+      "translation": "Separater anteriorer Zugang",
+      "original": "Separater anteriorer Zugang",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.approach.lateral": {
+      "translation": "Lateral",
+      "original": "Lateral",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.approach.lateral.desc": {
+      "translation": "Separater lateraler Zugang",
+      "original": "Separater lateraler Zugang",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.approach.posterior": {
+      "translation": "Posterior",
+      "original": "Posterior",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.approach.posterior.desc": {
+      "translation": "Gleicher Zugang wie Schrauben",
+      "original": "Gleicher Zugang wie Schrauben",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.cage.acdf.desc": {
+      "translation": "Anteriore zervikale Diskektomie & Fusion (ACDF)",
+      "original": "Anteriore zervikale Diskektomie & Fusion (ACDF)",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.cage.alif.desc": {
+      "translation": "Anteriore lumbale interkorporelle Fusion (ALIF)",
+      "original": "Anteriore lumbale interkorporelle Fusion (ALIF)",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.cage.olif.desc": {
+      "translation": "Oblique lumbale interkorporelle Fusion (OLIF/ATP)",
+      "original": "Oblique lumbale interkorporelle Fusion (OLIF)",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.cage.plif.desc": {
+      "translation": "Posteriore lumbale interkorporelle Fusion (PLIF)",
+      "original": "Posteriore lumbale interkorporelle Fusion (PLIF)",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.cage.tlif.desc": {
+      "translation": "Transforaminale lumbale interkorporelle Fusion (TLIF)",
+      "original": "Transforaminale lumbale interkorporelle Fusion (TLIF)",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.cage.xlif.desc": {
+      "translation": "Laterale lumbale interkorporelle Fusion (LLIF/XLIF)",
+      "original": "Laterale lumbale interkorporelle Fusion (XLIF)",
+      "status": "corrected",
+      "comment": null
+    },
+    "modal.cage.height": {
+      "translation": "Höhe (mm)",
+      "original": "Höhe (mm)",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.length": {
+      "translation": "Länge (A-P)",
+      "original": "Länge (A-P)",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.lordosis": {
+      "translation": "Lordose (°)",
+      "original": "Lordose (°)",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.side": {
+      "translation": "Seite",
+      "original": "Seite",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.side_bilateral": {
+      "translation": "Bilateral",
+      "original": "Bilateral",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.side_left": {
+      "translation": "Links",
+      "original": "Links",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.side_midline": {
+      "translation": "Mittellinig",
+      "original": "Mittellinig",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.side_right": {
+      "translation": "Rechts",
+      "original": "Rechts",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.title_edit": {
+      "translation": "Cage bearbeiten",
+      "original": "Cage bearbeiten",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.title_new": {
+      "translation": "Interkorporeller Cage",
+      "original": "Interkorporeller Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.cage.width": {
+      "translation": "Breite (M-L)",
+      "original": "Breite (M-L)",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.corpectomy.desc": {
+      "translation": "Wirbelkörperentfernung.",
+      "original": "Wirbelkörperentfernung.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.corpectomy.label": {
+      "translation": "Korporektomie (Anterior)",
+      "original": "Korporektomie (Anterior)",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.corpectomy.schwab": {
+      "translation": "Anterior",
+      "original": "Anterior",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.extpso.desc": {
+      "translation": "PSO + Resektion der angrenzenden Bandscheibe.",
+      "original": "PSO + Resektion der angrenzenden Bandscheibe.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.extpso.label": {
+      "translation": "Erweiterte PSO",
+      "original": "Erweiterte PSO",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.extpso.schwab": {
+      "translation": "Schwab Grad 4",
+      "original": "Schwab Grad 4",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.facet.desc": {
+      "translation": "Resektion der unteren Facette; Entfernung der Gelenkkapsel.",
+      "original": "Resektion der unteren Facette; Kapselentfernung.",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.osteotomy.facet.label": {
+      "translation": "Lösung des Facettengelenks",
+      "original": "Facettengelenklösung",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.osteotomy.facet.schwab": {
+      "translation": "Schwab Grad 1",
+      "original": "Schwab Grad 1",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.fallback": {
+      "translation": "Osteo",
+      "original": "Osteo",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.mlvcr.desc": {
+      "translation": "Resektion mehrerer Wirbel und Bandscheiben.",
+      "original": "Resektion mehrerer Wirbel und Bandscheiben.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.mlvcr.label": {
+      "translation": "Mehrsegmentale VCR",
+      "original": "Mehrsegmentale VCR",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.mlvcr.schwab": {
+      "translation": "Schwab Grad 6",
+      "original": "Schwab Grad 6",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.ponte.desc": {
+      "translation": "Komplette Facettektomie; Lig. flavum + Lamina.",
+      "original": "Komplette Facettektomie; Lig. flavum + Lamina.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.ponte.schwab": {
+      "translation": "Schwab Grad 2",
+      "original": "Schwab Grad 2",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.pso.desc": {
+      "translation": "Pedikelsubtraktionsosteotomie; partielle Wirbelkörperkeilresektion.",
+      "original": "Pedikelsubtraktionsosteotomie; partielle Wirbelkörperkeilresektion.",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.pso.label": {
+      "translation": "Standard-PSO",
+      "original": "Standard-PSO",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.pso.schwab": {
+      "translation": "Schwab Grad 3",
+      "original": "Schwab Grad 3",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.osteotomy.vcr.desc": {
+      "translation": "Komplette Wirbelkörperresektion (VCR).",
+      "original": "Komplette Wirbelkörperresektion.",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.osteotomy.vcr.schwab": {
+      "translation": "Schwab Grad 5",
+      "original": "Schwab Grad 5",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.angle": {
+      "translation": "Korrekturwinkel (°)",
+      "original": "Korrekturwinkel (°)",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.degrees": {
+      "translation": "Grad",
+      "original": "Grad",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.optgroup_anterior": {
+      "translation": "Anterior",
+      "original": "Anterior",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.optgroup_posterior": {
+      "translation": "Posterior (Schwab-Klassifikation)",
+      "original": "Posterior (Schwab-Klassifikation)",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.recon_cage": {
+      "translation": "Rekonstruktions-Cage",
+      "original": "Rekonstruktions-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.recon_cage_placeholder": {
+      "translation": "z.B. expandierbares Mesh 18x50mm",
+      "original": "z.B. expandierbares Mesh 18x50mm",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.title_edit": {
+      "translation": "Osteotomie bearbeiten",
+      "original": "Osteotomie bearbeiten",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.title_new": {
+      "translation": "Osteotomie planen",
+      "original": "Osteotomie planen",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.osteotomy.type": {
+      "translation": "Osteotomietyp",
+      "original": "Osteotomietyp",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.force.compression": {
+      "translation": "Kompression",
+      "original": "Kompression",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.force.derotate_ccw": {
+      "translation": "Gegen den Uhrzeigersinn derotieren",
+      "original": "Derotation GUZS",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.force.derotate_cw": {
+      "translation": "Im Uhrzeigersinn derotieren",
+      "original": "Derotation UZS",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.force.distraction": {
+      "translation": "Distraktion",
+      "original": "Distraktion",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.force.translate_left": {
+      "translation": "Translation links",
+      "original": "Translation links",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.force.translate_right": {
+      "translation": "Translation rechts",
+      "original": "Translation rechts",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.force.title": {
+      "translation": "Kraft wählen",
+      "original": "Kraft wählen",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.note.apex": {
+      "translation": "Apex",
+      "original": "Scheitelwirbel",
+      "status": "corrected",
+      "comment": null
+    },
+    "clinical.note.end_vertebra": {
+      "translation": "Endwirbel",
+      "original": "Endwirbel",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.note.last_visible_rib": {
+      "translation": "Letzte sichtbare Rippe",
+      "original": "Letzte sichtbare Rippe",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.note.neutral_vertebra": {
+      "translation": "Neutraler Wirbel",
+      "original": "Neutraler Wirbel",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.note.stable_vertebra": {
+      "translation": "Stabiler Wirbel",
+      "original": "Stabiler Wirbel",
+      "status": "correct",
+      "comment": null
+    },
+    "clinical.note.transitional_level": {
+      "translation": "Übergangssegment",
+      "original": "Übergangswirbel",
+      "status": "corrected",
+      "comment": null
+    },
+    "modal.note.show_arrow": {
+      "translation": "Pfeil anzeigen",
+      "original": "Pfeil anzeigen",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.note.text": {
+      "translation": "Text",
+      "original": "Text",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.note.text_placeholder": {
+      "translation": "z.B. Apex, Endwirbel",
+      "original": "z.B. Apex, Endwirbel",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.note.title_edit": {
+      "translation": "Notiz bearbeiten",
+      "original": "Notiz bearbeiten",
+      "status": "correct",
+      "comment": null
+    },
+    "modal.note.title_new": {
+      "translation": "Notiz hinzufügen",
+      "original": "Notiz hinzufügen",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.band": {
+      "translation": "Band",
+      "original": "Band",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.cable": {
+      "translation": "Kabel",
+      "original": "Kabel",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.compression": {
+      "translation": "Kompress.",
+      "original": "Kompress.",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.connector": {
+      "translation": "Querverbinder",
+      "original": "Querverbinder",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.corpectomy": {
+      "translation": "Korporektomie",
+      "original": "Korporektomie",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.derotate_ccw": {
+      "translation": "Derotation",
+      "original": "Derotation",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.derotate_cw": {
+      "translation": "Derotation",
+      "original": "Derotation",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.distraction": {
+      "translation": "Distrakt.",
+      "original": "Distrakt.",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.il_hook": {
+      "translation": "Infralaminar",
+      "original": "Infralaminär",
+      "status": "corrected",
+      "comment": null
+    },
+    "tool.implant": {
+      "translation": "Implantat",
+      "original": "Implantat",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.monoaxial": {
+      "translation": "Monoaxial",
+      "original": "Monoaxial",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.note": {
+      "translation": "Notiz",
+      "original": "Notiz",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.osteotomy": {
+      "translation": "Osteotomie",
+      "original": "Osteotomie",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.pedicle_hook": {
+      "translation": "Pedikel",
+      "original": "Pedikel",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.polyaxial": {
+      "translation": "Polyaxial",
+      "original": "Polyaxial",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.sl_hook": {
+      "translation": "Supralaminar",
+      "original": "Supralaminär",
+      "status": "corrected",
+      "comment": null
+    },
+    "tool.tp_hook": {
+      "translation": "QF-Haken",
+      "original": "QF-Haken",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.tp_hook_up": {
+      "translation": "QF-Haken (Hoch)",
+      "original": "QF-Haken (Auf)",
+      "status": "corrected",
+      "comment": null
+    },
+    "tool.translate_left": {
+      "translation": "Trans. links",
+      "original": "Trans. links",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.translate_right": {
+      "translation": "Trans. rechts",
+      "original": "Trans. rechts",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.uniplanar": {
+      "translation": "Uniplanar",
+      "original": "Uniplanar",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.unstable": {
+      "translation": "Instabil",
+      "original": "Instabil",
+      "status": "correct",
+      "comment": null
+    },
+    "tool.wire": {
+      "translation": "Draht",
+      "original": "Draht",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cage.acdf": {
+      "translation": "ACDF-Cage",
+      "original": "ACDF-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cage.alif": {
+      "translation": "ALIF-Cage",
+      "original": "ALIF-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cage.olif": {
+      "translation": "OLIF-Cage",
+      "original": "OLIF-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cage.plif": {
+      "translation": "PLIF-Cage",
+      "original": "PLIF-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cage.tlif": {
+      "translation": "TLIF-Cage",
+      "original": "TLIF-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cage.xlif": {
+      "translation": "XLIF/LLIF-Cage",
+      "original": "XLIF/LLIF-Cage",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.cages": {
+      "translation": "Cages",
+      "original": "Cages",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.fixation": {
+      "translation": "Fixierung",
+      "original": "Fixierung",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.hooks": {
+      "translation": "Haken",
+      "original": "Haken",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.osteotomies": {
+      "translation": "Osteotomien",
+      "original": "Osteotomien",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.other": {
+      "translation": "Sonstige",
+      "original": "Sonstige",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.rod_left": {
+      "translation": "L:",
+      "original": "L:",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.rod_right": {
+      "translation": "R:",
+      "original": "R:",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.rods": {
+      "translation": "Stäbe",
+      "original": "Stäbe",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.screws": {
+      "translation": "Schrauben",
+      "original": "Schrauben",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.title_construct": {
+      "translation": "Konstrukt-Inventar",
+      "original": "Konstrukt-Inventar",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.title_plan": {
+      "translation": "Plan-Inventar",
+      "original": "Plan-Inventar",
+      "status": "correct",
+      "comment": null
+    },
+    "inventory.view_final": {
+      "translation": "Endansicht anzeigen",
+      "original": "Endgültig",
+      "status": "corrected",
+      "comment": null
+    },
+    "inventory.view_plan": {
+      "translation": "Planansicht anzeigen",
+      "original": "Plan",
+      "status": "corrected",
+      "comment": null
+    },
+    "chart.cervical_cage_hint": {
+      "translation": "Zervikaler Cage — Zervikalansicht verwenden",
+      "original": "Zervikaler Cage — Zervikalansicht verwenden",
+      "status": "correct",
+      "comment": null
+    },
+    "chart.corpectomy": {
+      "translation": "Korporektomie",
+      "original": "Korporektomie",
+      "status": "correct",
+      "comment": null
+    },
+    "chart.force_plan_only": {
+      "translation": "Kräfte — im Plan bearbeiten",
+      "original": "Kräfte — im Plan bearbeiten",
+      "status": "correct",
+      "comment": null
+    },
+    "chart.header.force": {
+      "translation": "Kraft",
+      "original": "Kraft",
+      "status": "correct",
+      "comment": null
+    },
+    "chart.header.left": {
+      "translation": "Links",
+      "original": "Links",
+      "status": "correct",
+      "comment": null
+    },
+    "chart.header.right": {
+      "translation": "Rechts",
+      "original": "Rechts",
+      "status": "correct",
+      "comment": null
+    },
+    "sync.linked": {
+      "translation": "Mit anderem Fenster verknüpft",
+      "original": "Mit anderem Fenster verbunden",
+      "status": "corrected",
+      "comment": null
+    },
+    "sync.no_peer": {
+      "translation": "Kein anderes Fenster erkannt",
+      "original": "Kein anderes Fenster erkannt",
+      "status": "correct",
+      "comment": null
+    },
+    "export.construct": {
+      "translation": "Endgültiges chirurgisches Konstrukt",
+      "original": "Endgültiges chirurgisches Konstrukt",
+      "status": "correct",
+      "comment": null
+    },
+    "export.plan": {
+      "translation": "Plan",
+      "original": "Plan",
+      "status": "correct",
+      "comment": null
+    },
+    "export.title": {
+      "translation": "Instrumentierung der Wirbelsäule",
+      "original": "Spinale Instrumentierung",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.cages.body": {
+      "translation": "Klicken Sie <strong>zwischen</strong> die Wirbel, um einen Cage zu platzieren. Cage-Typen sind nach OP-Zugang gruppiert (Posterior, Anterior, Lateral) und nach anatomischer Höhe gefiltert.",
+      "original": "Klicken Sie <strong>zwischen</strong> die Wirbel, um einen Cage zu platzieren. Typen sind nach OP-Zugang gruppiert (Posterior, Anterior, Lateral) und nach anatomischer Höhe gefiltert.",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.cages.title": {
+      "translation": "Interkorporelle Cages",
+      "original": "Interkorporelle Cages",
+      "status": "correct",
+      "comment": null
+    },
+    "help.copy_plan.body": {
+      "translation": "Im <strong>Hochformat</strong> erscheinen geplante Platzierungen im Tab „Konstruktion“ als blasse Vorschauen. Auf eine Vorschau tippen, um sie zu prüfen und zu bestätigen — das Dialogfeld öffnet sich mit vorausgefüllten Größen und Anmerkungen. <strong>Plan bestätigen</strong> übernimmt alle verbleibenden unbestätigten Platzierungen auf einmal. Im Querformat sind beide Spalten nebeneinander sichtbar.",
+      "original": "Im <strong>Hochformat</strong> erscheinen geplante Platzierungen als blasse Geisterbilder auf dem Konstrukt-Tab. Tippen Sie auf ein Geisterbild, um es zu überprüfen und zu bestätigen — das Dialogfeld öffnet sich mit vorausgefüllten Größen und Anmerkungen. <strong>Plan bestätigen</strong> übernimmt alle verbleibenden unbestätigten Platzierungen auf einmal. Im Querformat sind beide Spalten nebeneinander sichtbar.",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.copy_plan.title": {
+      "translation": "Plan bestätigen",
+      "original": "Plan bestätigen",
+      "status": "correct",
+      "comment": null
+    },
+    "help.linked_screens.body": {
+      "translation": "Öffnen Sie die App in <strong>zwei Fenstern desselben Browsers</strong> (z.u00A0B. zwei Chrome-Fenster, nicht Chrome + Edge) auf einem Computer mit zwei oder mehr Bildschirmen. Änderungen synchronisieren sich automatisch — ein Bildschirm kann den Plan zeigen, der andere die Patientendaten mit Live-Inventar. Ein grünes Link-Symbol zeigt eine aktive Verbindung an. Beide Fenster müssen dieselbe App-Version verwenden.",
+      "original": "Öffnen Sie die App in <strong>zwei Fenstern desselben Browsers</strong> (z.u00A0B. zwei Chrome-Fenster, nicht Chrome + Edge) auf einem Computer mit zwei oder mehr Bildschirmen. Änderungen synchronisieren sich automatisch — ein Bildschirm kann den Plan zeigen, der andere die Demografie mit Live-Inventar. Ein grünes Link-Symbol zeigt eine aktive Verbindung an. Beide Fenster müssen dieselbe App-Version verwenden.",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.linked_screens.title": {
+      "translation": "Verbundene Bildschirme",
+      "original": "Verbundene Bildschirme",
+      "status": "correct",
+      "comment": null
+    },
+    "help.osteotomies.body": {
+      "translation": "Schwab 1–2 (Facette, Ponte) werden auf Höhe der <strong>Bandscheibe</strong> platziert — klicken Sie auf den Raum zwischen den Wirbeln. Schwab 3+ (PSO, VCR etc.) werden am <strong>Wirbelkörper</strong> platziert — klicken Sie auf die Mittellinie. VCR, ML-VCR und Korpektomie enthalten ein Beschreibungsfeld für den Rekonstruktions-Cage.",
+      "original": "Klicken Sie auf den <strong>Wirbelkörper</strong> (Mittellinie), um eine Osteotomie zu platzieren. Schwab Grad 1-6 plus anteriore Korporektomie. VCR, ML-VCR und Korporektomie enthalten ein Beschreibungsfeld für den Rekonstruktions-Cage.",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.osteotomies.title": {
+      "translation": "Osteotomien",
+      "original": "Osteotomien",
+      "status": "correct",
+      "comment": null
+    },
+    "help.portrait_mode.body": {
+      "translation": "Die App erkennt die Bildschirmausrichtung automatisch. Im <strong>Querformat</strong> werden Plan und Konstruktion nebeneinander angezeigt. Im <strong>Hochformat</strong> wird jeweils nur eine Spalte angezeigt — wischen Sie oder tippen Sie auf die Tabs, um zwischen Patientendaten, Plan und Konstruktion zu wechseln. Die Anwendung ist für Tablets optimiert; auf Smartphones (Bildschirme unter 600 px) wird sie im Nur-Ansicht-Modus geöffnet.",
+      "original": "Die App erkennt die Bildschirmausrichtung automatisch. <strong>Querformat</strong> zeigt Plan und Konstrukt nebeneinander. <strong>Hochformat</strong> zeigt jeweils eine Spalte — wischen oder tippen Sie auf Tabs, um zwischen Demographie, Plan und Konstrukt zu wechseln. Für Tablets konzipiert; Telefone (Bildschirme unter 600px) öffnen im Nur-Lese-Modus.",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.portrait_mode.title": {
+      "translation": "Hochformat & Tablet-Modus",
+      "original": "Hochformat & Tablet-Modus",
+      "status": "correct",
+      "comment": null
+    },
+    "help.save_load.body": {
+      "translation": "Speichern exportiert eine .json-Projektdatei, die später wieder geladen werden kann. JPG und PDF exportieren die sichtbare Ansicht für die klinische Dokumentation. Das linke Panel erfasst Implantathersteller, Schraubensystem, Knochentransplantat und automatisch generiertes Inventar.",
+      "original": "Speichern exportiert eine .json-Projektdatei, die später wieder geladen werden kann. JPG und PDF exportieren das sichtbare Diagramm für klinische Unterlagen. Das linke Panel erfasst Implantathersteller, Schraubensystem, Knochentransplantat und automatisch generiertes Inventar.",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.save_load.title": {
+      "translation": "Speichern / Laden / Exportieren",
+      "original": "Speichern / Laden / Exportieren",
+      "status": "correct",
+      "comment": null
+    },
+    "help.screws_hooks.body": {
+      "translation": "Klicken Sie <strong>links oder rechts</strong> eines Wirbels, um ein Implantat zu platzieren. Wählen Sie aus 3 Schraubentypen, 5 Haken (inkl. QF hoch/runter) oder Bändern/Drähten/Kabeln. Schrauben und Haken unterstützen Freitext-Anmerkungen (z.B. fenestriert, kortikal, Revision).",
+      "original": "Klicken Sie <strong>links oder rechts</strong> eines Wirbels, um ein Implantat zu platzieren. Wählen Sie aus 3 Schraubentypen, 5 Haken (inkl. QF auf/ab) oder Bändern/Drähten/Kabeln. Schrauben und Haken unterstützen Freitext-Anmerkungen (z.B. fenestriert, kortikal, Revision).",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.screws_hooks.title": {
+      "translation": "Schrauben & Haken",
+      "original": "Schrauben & Haken",
+      "status": "correct",
+      "comment": null
+    },
+    "help.session_privacy.body": {
+      "translation": "Verhindert, dass Patientendaten auf diesem Computer gespeichert werden. <strong>Rot = keine Daten gespeichert</strong> (für gemeinsam genutzte PCs). Grau = Daten werden zwischen Sitzungen automatisch in diesem Browser gespeichert.",
+      "original": "Verhindert, dass Patientendaten auf diesem Computer gespeichert werden. <strong>Rot = keine Daten gespeichert</strong> (für gemeinsam genutzte PCs). Grau = Daten werden zwischen Sitzungen automatisch in diesem Browser gespeichert.",
+      "status": "correct",
+      "comment": null
+    },
+    "help.session_privacy.title": {
+      "translation": "Datenschutzmodus",
+      "original": "Sitzungsdatenschutz",
+      "status": "corrected",
+      "comment": null
+    },
+    "help.shortcuts.body": {
+      "translation": "<strong>Eingabe</strong> zum Bestätigen, <strong>Escape</strong> zum Abbrechen, <strong>Entf</strong> zum Entfernen eines Implantats in jedem Dialogfenster.",
+      "original": "<strong>Eingabe</strong> zum Bestätigen, <strong>Escape</strong> zum Abbrechen, <strong>Entf</strong> zum Entfernen eines Implantats in jedem Dialogfenster.",
+      "status": "correct",
+      "comment": null
+    },
+    "help.shortcuts.title": {
+      "translation": "Tastenkürzel",
+      "original": "Tastenkürzel",
+      "status": "correct",
+      "comment": null
+    },
+    "help.title": {
+      "translation": "Hilfeleitfaden",
+      "original": "Hilfe",
+      "status": "corrected",
+      "comment": null
+    },
+    "button.cancel": {
+      "translation": "Abbrechen",
+      "original": "Abbrechen",
+      "status": "correct",
+      "comment": null
+    },
+    "button.close": {
+      "translation": "Schließen",
+      "original": "Schließen",
+      "status": "correct",
+      "comment": null
+    },
+    "button.confirm": {
+      "translation": "Bestätigen",
+      "original": "Bestätigen",
+      "status": "correct",
+      "comment": null
+    },
+    "button.remove": {
+      "translation": "Entfernen",
+      "original": "Entfernen",
+      "status": "correct",
+      "comment": null
+    },
+    "shortcut.delete": {
+      "translation": "Tastenkürzel: Entf",
+      "original": "Tastenkürzel: Entf",
+      "status": "correct",
+      "comment": null
+    },
+    "shortcut.enter": {
+      "translation": "Tastenkürzel: Eingabe",
+      "original": "Tastenkürzel: Eingabe",
+      "status": "correct",
+      "comment": null
+    },
+    "shortcut.escape": {
+      "translation": "Tastenkürzel: Esc",
+      "original": "Tastenkürzel: Esc",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.all_confirmed": {
+      "translation": "Alle Platzierungen bereits bestätigt.",
+      "original": "Alle Platzierungen bereits bestätigt.",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.cage_not_permitted": {
+      "translation": "{cageType} ist bei {level} nicht zulässig.",
+      "original": "{cageType} ist bei {level} nicht zulässig.",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.invalid_file": {
+      "translation": "Ungültige Datei",
+      "original": "Ungültige Datei",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.loaded": {
+      "translation": "Projekt erfolgreich geladen.",
+      "original": "Projekt erfolgreich geladen.",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.new_patient": {
+      "translation": "Neuen Patienten beginnen? Der aktuelle Plan wird gelöscht.",
+      "original": "Neuen Patienten beginnen? Der aktuelle Plan wird gelöscht.",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.no_cage_types": {
+      "translation": "Keine interkorporellen Cage-Typen verfügbar bei {level}.",
+      "original": "Keine interkorporellen Cage-Typen verfügbar bei {level}.",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.no_disc_space": {
+      "translation": "Kein Bandscheibenraum unterhalb dieser Höhe.",
+      "original": "Kein Bandscheibenraum unterhalb dieser Höhe.",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.no_plan": {
+      "translation": "Kein Plan zum Kopieren vorhanden.",
+      "original": "Kein Plan zum Kopieren.",
+      "status": "corrected",
+      "comment": null
+    },
+    "alert.overwrite_construct": {
+      "translation": "Bestehendes Konstrukt überschreiben?",
+      "original": "Bestehendes Konstrukt überschreiben?",
+      "status": "correct",
+      "comment": null
+    },
+    "alert.unsupported_format": {
+      "translation": "Nicht unterstütztes Dateiformat. Bitte verwenden Sie eine von dieser Anwendung gespeicherte Datei.",
+      "original": "Nicht unterstütztes Dateiformat. Bitte verwenden Sie eine von dieser Anwendung gespeicherte Datei.",
+      "status": "correct",
+      "comment": null
+    },
+    "credits.app_name": {
+      "translation": "Spinale Instrumentierung Plan & Protokoll",
+      "original": "Spinale Instrumentierung Plan & Protokoll",
+      "status": "correct",
+      "comment": null
+    },
+    "credits.developer": {
+      "translation": "Entwickelt von",
+      "original": "Entwickelt von",
+      "status": "correct",
+      "comment": null
+    },
+    "credits.license": {
+      "translation": "Lizenziert unter <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-slate-600\">GNU GPLv3-Lizenz</a>. Für kommerzielle Vertriebsanfragen kontaktieren Sie den Entwickler.",
+      "original": "Lizenziert unter der <a href=\"https://www.gnu.org/licenses/gpl-3.0.en.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline hover:text-slate-600\">GNU GPLv3-Lizenz</a>. Für kommerzielle Vertriebsanfragen kontaktieren Sie den Entwickler.",
+      "status": "corrected",
+      "comment": null
+    },
+    "disclaimer.text": {
+      "translation": "Übersetzung nicht verifiziert — Feedback willkommen: placeholder@example.com",
+      "original": "Übersetzung nicht verifiziert — Feedback willkommen: placeholder@example.com",
+      "status": "correct",
+      "comment": "german translation now verified by me ;)"
+    },
+    "modal.changelog.title": {
+      "translation": "Versionshistorie",
+      "original": "Versionshistorie",
+      "status": "correct",
+      "comment": null
+    }
+  }
+}

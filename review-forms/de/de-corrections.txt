@@ -1,0 +1,173 @@
+Translation Corrections — DE
+Review date: 2026-04-02
+Source file: de-review-2026-04-02.json
+Reviewer: Vicky Portner (industry) — Stryker Spine / VB Germany [Germany]
+
+Summary: 203 correct, 40 corrected, 0 pending
+======================================================================
+
+CORRECTIONS
+----------------------------------------
+  Key:       portrait.tab.demographics
+  Original:  Demografie
+  Corrected: Patientendaten
+
+  Key:       portrait.view_only
+  Original:  Nur Ansicht bei dieser Bildschirmgröße. Verwenden Sie ein Tablet oder einen Desktop zum Bearbeiten.
+  Corrected: Auf dieser Bildschirmgröße nur Ansicht möglich. Zum Bearbeiten bitte ein Tablet oder einen Desktop verwenden.
+
+  Key:       sidebar.copy_plan
+  Original:  Plan in Konstrukt kop.
+  Corrected: Plan in Konstruktion übernehmen
+
+  Key:       sidebar.region_view
+  Original:  Ansicht
+  Corrected: Bereichsansicht
+
+  Key:       sidebar.view.whole_short
+  Original:  Alle
+  Corrected: Alles
+
+  Key:       patient.bone_graft
+  Original:  Knochentransplantat
+  Corrected: Knochenersatzmaterial
+
+  Key:       patient.bone_graft_notes_placeholder
+  Original:  Weitere Details...
+  Corrected: Weitere Informationen...
+
+  Key:       patient.click_to_enter
+  Original:  Klicken zum Eingeben...
+  Corrected: Zum Eingeben klicken…
+
+  Key:       patient.other
+  Original:  Andere
+  Corrected: Sonstiges
+
+  Key:       patient.select_supplier
+  Original:  Hersteller wählen...
+  Corrected: Hersteller auswählen...
+
+  Key:       clinical.hook.tp_hook
+  Original:  QF (Ab)
+  Corrected: QF (Runter)
+
+  Key:       clinical.hook.tp_hook_up
+  Original:  QF (Auf)
+  Corrected: QF (Hoch)
+
+  Key:       modal.screw.icon_only
+  Original:  Nur Symbol. Kein Label.
+  Corrected: Nur Symbol. Keine Beschriftung.
+
+  Key:       clinical.cage.olif.desc
+  Original:  Oblique lumbale interkorporelle Fusion (OLIF)
+  Corrected: Oblique lumbale interkorporelle Fusion (OLIF/ATP)
+
+  Key:       clinical.cage.xlif.desc
+  Original:  Laterale lumbale interkorporelle Fusion (XLIF)
+  Corrected: Laterale lumbale interkorporelle Fusion (LLIF/XLIF)
+
+  Key:       clinical.osteotomy.facet.desc
+  Original:  Resektion der unteren Facette; Kapselentfernung.
+  Corrected: Resektion der unteren Facette; Entfernung der Gelenkkapsel.
+
+  Key:       clinical.osteotomy.facet.label
+  Original:  Facettengelenklösung
+  Corrected: Lösung des Facettengelenks
+
+  Key:       clinical.osteotomy.vcr.desc
+  Original:  Komplette Wirbelkörperresektion.
+  Corrected: Komplette Wirbelkörperresektion (VCR).
+
+  Key:       clinical.force.derotate_ccw
+  Original:  Derotation GUZS
+  Corrected: Gegen den Uhrzeigersinn derotieren
+
+  Key:       clinical.force.derotate_cw
+  Original:  Derotation UZS
+  Corrected: Im Uhrzeigersinn derotieren
+
+  Key:       clinical.note.apex
+  Original:  Scheitelwirbel
+  Corrected: Apex
+
+  Key:       clinical.note.transitional_level
+  Original:  Übergangswirbel
+  Corrected: Übergangssegment
+
+  Key:       tool.il_hook
+  Original:  Infralaminär
+  Corrected: Infralaminar
+
+  Key:       tool.sl_hook
+  Original:  Supralaminär
+  Corrected: Supralaminar
+
+  Key:       tool.tp_hook_up
+  Original:  QF-Haken (Auf)
+  Corrected: QF-Haken (Hoch)
+
+  Key:       inventory.view_final
+  Original:  Endgültig
+  Corrected: Endansicht anzeigen
+
+  Key:       inventory.view_plan
+  Original:  Plan
+  Corrected: Planansicht anzeigen
+
+  Key:       sync.linked
+  Original:  Mit anderem Fenster verbunden
+  Corrected: Mit anderem Fenster verknüpft
+
+  Key:       export.title
+  Original:  Spinale Instrumentierung
+  Corrected: Instrumentierung der Wirbelsäule
+
+  Key:       help.cages.body
+  Original:  Klicken Sie <strong>zwischen</strong> die Wirbel, um einen Cage zu platzieren. Typen sind nach OP-Zugang gruppiert (Posterior, Anterior, Lateral) und nach anatomischer Höhe gefiltert.
+  Corrected: Klicken Sie <strong>zwischen</strong> die Wirbel, um einen Cage zu platzieren. Cage-Typen sind nach OP-Zugang gruppiert (Posterior, Anterior, Lateral) und nach anatomischer Höhe gefiltert.
+
+  Key:       help.copy_plan.body
+  Original:  Im <strong>Hochformat</strong> erscheinen geplante Platzierungen als blasse Geisterbilder auf dem Konstrukt-Tab. Tippen Sie auf ein Geisterbild, um es zu überprüfen und zu bestätigen — das Dialogfeld öffnet sich mit vorausgefüllten Größen und Anmerkungen. <strong>Plan bestätigen</strong> übernimmt alle verbleibenden unbestätigten Platzierungen auf einmal. Im Querformat sind beide Spalten nebeneinander sichtbar.
+  Corrected: Im <strong>Hochformat</strong> erscheinen geplante Platzierungen im Tab „Konstruktion“ als blasse Vorschauen. Auf eine Vorschau tippen, um sie zu prüfen und zu bestätigen — das Dialogfeld öffnet sich mit vorausgefüllten Größen und Anmerkungen. <strong>Plan bestätigen</strong> übernimmt alle verbleibenden unbestätigten Platzierungen auf einmal. Im Querformat sind beide Spalten nebeneinander sichtbar.
+
+  Key:       help.linked_screens.body
+  Original:  Öffnen Sie die App in <strong>zwei Fenstern desselben Browsers</strong> (z.u00A0B. zwei Chrome-Fenster, nicht Chrome + Edge) auf einem Computer mit zwei oder mehr Bildschirmen. Änderungen synchronisieren sich automatisch — ein Bildschirm kann den Plan zeigen, der andere die Demografie mit Live-Inventar. Ein grünes Link-Symbol zeigt eine aktive Verbindung an. Beide Fenster müssen dieselbe App-Version verwenden.
+  Corrected: Öffnen Sie die App in <strong>zwei Fenstern desselben Browsers</strong> (z.u00A0B. zwei Chrome-Fenster, nicht Chrome + Edge) auf einem Computer mit zwei oder mehr Bildschirmen. Änderungen synchronisieren sich automatisch — ein Bildschirm kann den Plan zeigen, der andere die Patientendaten mit Live-Inventar. Ein grünes Link-Symbol zeigt eine aktive Verbindung an. Beide Fenster müssen dieselbe App-Version verwenden.
+
+  Key:       help.osteotomies.body
+  Original:  Klicken Sie auf den <strong>Wirbelkörper</strong> (Mittellinie), um eine Osteotomie zu platzieren. Schwab Grad 1-6 plus anteriore Korporektomie. VCR, ML-VCR und Korporektomie enthalten ein Beschreibungsfeld für den Rekonstruktions-Cage.
+  Corrected: Schwab 1–2 (Facette, Ponte) werden auf Höhe der <strong>Bandscheibe</strong> platziert — klicken Sie auf den Raum zwischen den Wirbeln. Schwab 3+ (PSO, VCR etc.) werden am <strong>Wirbelkörper</strong> platziert — klicken Sie auf die Mittellinie. VCR, ML-VCR und Korpektomie enthalten ein Beschreibungsfeld für den Rekonstruktions-Cage.
+
+  Key:       help.portrait_mode.body
+  Original:  Die App erkennt die Bildschirmausrichtung automatisch. <strong>Querformat</strong> zeigt Plan und Konstrukt nebeneinander. <strong>Hochformat</strong> zeigt jeweils eine Spalte — wischen oder tippen Sie auf Tabs, um zwischen Demographie, Plan und Konstrukt zu wechseln. Für Tablets konzipiert; Telefone (Bildschirme unter 600px) öffnen im Nur-Lese-Modus.
+  Corrected: Die App erkennt die Bildschirmausrichtung automatisch. Im <strong>Querformat</strong> werden Plan und Konstruktion nebeneinander angezeigt. Im <strong>Hochformat</strong> wird jeweils nur eine Spalte angezeigt — wischen Sie oder tippen Sie auf die Tabs, um zwischen Patientendaten, Plan und Konstruktion zu wechseln. Die Anwendung ist für Tablets optimiert; auf Smartphones (Bildschirme unter 600 px) wird sie im Nur-Ansicht-Modus geöffnet.
+
+  Key:       help.save_load.body
+  Original:  Speichern exportiert eine .json-Projektdatei, die später wieder geladen werden kann. JPG und PDF exportieren das sichtbare Diagramm für klinische Unterlagen. Das linke Panel erfasst Implantathersteller, Schraubensystem, Knochentransplantat und automatisch generiertes Inventar.
+  Corrected: Speichern exportiert eine .json-Projektdatei, die später wieder geladen werden kann. JPG und PDF exportieren die sichtbare Ansicht für die klinische Dokumentation. Das linke Panel erfasst Implantathersteller, Schraubensystem, Knochentransplantat und automatisch generiertes Inventar.
+
+  Key:       help.screws_hooks.body
+  Original:  Klicken Sie <strong>links oder rechts</strong> eines Wirbels, um ein Implantat zu platzieren. Wählen Sie aus 3 Schraubentypen, 5 Haken (inkl. QF auf/ab) oder Bändern/Drähten/Kabeln. Schrauben und Haken unterstützen Freitext-Anmerkungen (z.B. fenestriert, kortikal, Revision).
+  Corrected: Klicken Sie <strong>links oder rechts</strong> eines Wirbels, um ein Implantat zu platzieren. Wählen Sie aus 3 Schraubentypen, 5 Haken (inkl. QF hoch/runter) oder Bändern/Drähten/Kabeln. Schrauben und Haken unterstützen Freitext-Anmerkungen (z.B. fenestriert, kortikal, Revision).
+
+  Key:       help.session_privacy.title
+  Original:  Sitzungsdatenschutz
+  Corrected: Datenschutzmodus
+
+  Key:       help.title
+  Original:  Hilfe
+  Corrected: Hilfeleitfaden
+
+  Key:       alert.no_plan
+  Original:  Kein Plan zum Kopieren.
+  Corrected: Kein Plan zum Kopieren vorhanden.
+
+  Key:       credits.license
+  Original:  Lizenziert unter der <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-slate-600">GNU GPLv3-Lizenz</a>. Für kommerzielle Vertriebsanfragen kontaktieren Sie den Entwickler.
+  Corrected: Lizenziert unter <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-slate-600">GNU GPLv3-Lizenz</a>. Für kommerzielle Vertriebsanfragen kontaktieren Sie den Entwickler.
+
+ALL COMMENTS
+----------------------------------------
+  [correct] disclaimer.text: german translation now verified by me ;)
