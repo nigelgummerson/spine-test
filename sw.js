@@ -2,7 +2,7 @@
 // Cache-first strategy: serve from cache, fall back to network, update cache in background.
 // Cache name includes a version hash so old caches are cleaned up on deploy.
 
-const CACHE_NAME = 'skeletal-plan-v3.14.01-beta';
+const CACHE_NAME = 'skeletal-plan-v3.15.00-beta';
 const BASE_PATH = '/spine/';
 
 // Assets to pre-cache on install (the app shell)
