@@ -1,0 +1,183 @@
+{
+    "schema": {
+        "format": "spinal-instrumentation",
+        "version": 10,
+        "schemaUrl": "https://plan.skeletalsurgery.com/spine/schema/v4/spinal-instrumentation.json",
+        "generator": {
+            "name": "Spinal Instrumentation Plan & Record",
+            "version": "v3.25.01-beta",
+            "url": "https://plan.skeletalsurgery.com/spine"
+        }
+    },
+    "document": {
+        "id": "6f33a516-ef5f-4486-88ec-dad7ef4e561f",
+        "created": "2026-04-29T09:15:57.427Z",
+        "modified": "2026-04-29T09:19:01.120Z",
+        "language": "en"
+    },
+    "patient": {
+        "name": "",
+        "identifier": ""
+    },
+    "case": {
+        "surgeon": "",
+        "date": "",
+        "location": ""
+    },
+    "implantSystem": {
+        "manufacturer": "Medtronic",
+        "system": "ModuLeX"
+    },
+    "plan": {
+        "elements": [
+            {
+                "id": "1777453492631",
+                "type": "screw",
+                "level": "L5",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 45
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "ModuLeX",
+                "createdAt": "2026-04-29T09:16:40.117Z"
+            },
+            {
+                "id": "1777453492632",
+                "type": "screw",
+                "level": "L5",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 45
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "ModuLeX",
+                "createdAt": "2026-04-29T09:16:40.117Z"
+            },
+            {
+                "id": "1777453492633",
+                "type": "screw",
+                "level": "S1",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 45
+                },
+                "screwSystem": "ModuLeX",
+                "createdAt": "2026-04-29T09:16:51.027Z"
+            },
+            {
+                "id": "1777453492634",
+                "type": "screw",
+                "level": "S1",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 45
+                },
+                "screwSystem": "ModuLeX",
+                "createdAt": "2026-04-29T09:16:51.027Z"
+            },
+            {
+                "id": "1777453492637",
+                "type": "cage",
+                "level": "L5",
+                "side": "right",
+                "cage": {
+                    "approach": "TLIF",
+                    "height": 11,
+                    "width": 11,
+                    "length": 28,
+                    "lordosis": 12
+                },
+                "createdAt": "2026-04-29T09:18:41.235Z"
+            }
+        ],
+        "rods": [
+            {
+                "id": "rod-left",
+                "side": "left",
+                "material": "titanium",
+                "diameter": 6,
+                "profile": "round",
+                "length": 50,
+                "contour": "pre_contoured"
+            },
+            {
+                "id": "rod-right",
+                "side": "right",
+                "material": "titanium",
+                "diameter": 6,
+                "profile": "round",
+                "length": 50,
+                "contour": "pre_contoured"
+            }
+        ],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": [],
+        "decompressions": [
+            {
+                "id": "1777453492636",
+                "level": "L5-S1",
+                "procedure": "facetectomy_complete",
+                "zones": [
+                    {
+                        "zone": "lateral_recess",
+                        "side": "left"
+                    },
+                    {
+                        "zone": "foraminal",
+                        "side": "left"
+                    },
+                    {
+                        "zone": "extraforaminal",
+                        "side": "left"
+                    }
+                ],
+                "approach": "open",
+                "revision": false,
+                "createdAt": "2026-04-29T09:17:39.367Z"
+            }
+        ]
+    },
+    "construct": {
+        "elements": [],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "caseScans": [],
+    "ui": {
+        "colourScheme": "navy",
+        "viewMode": "t10_pelvis",
+        "notePositions": {},
+        "preferences": {
+            "showPelvis": true,
+            "useRegionDefaults": true,
+            "confirmAndNext": true
+        }
+    },
+    "template": {
+        "name": "demo-l5s1-tlif",
+        "createdFrom": "6f33a516-ef5f-4486-88ec-dad7ef4e561f",
+        "createdAt": "2026-04-29T09:19:01.120Z"
+    }
+}

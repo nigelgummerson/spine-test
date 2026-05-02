@@ -1,1 +1,0 @@
-var e={"10888857034884":{s:`Nile`,t:`screw`,c:`2601-90028`,n:`Howmedica Osteonics Corp`}};export{e as default};

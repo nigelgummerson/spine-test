@@ -1,0 +1,105 @@
+{
+    "schema": {
+        "format": "spinal-instrumentation",
+        "version": 10,
+        "schemaUrl": "https://plan.skeletalsurgery.com/spine/schema/v4/spinal-instrumentation.json",
+        "generator": {
+            "name": "Spinal Instrumentation Plan & Record",
+            "version": "v3.25.01-beta",
+            "url": "https://plan.skeletalsurgery.com/spine"
+        }
+    },
+    "document": {
+        "id": "dc3e351f-d4eb-41e9-91a2-7283390a9ce4",
+        "created": "2026-04-29T09:28:51.990Z",
+        "modified": "2026-04-29T09:32:25.812Z",
+        "language": "en"
+    },
+    "patient": {
+        "name": "",
+        "identifier": ""
+    },
+    "case": {
+        "surgeon": "",
+        "date": "",
+        "location": ""
+    },
+    "implantSystem": {
+        "manufacturer": "Spineart",
+        "system": "Romeo"
+    },
+    "plan": {
+        "elements": [
+            {
+                "id": "1777453104378",
+                "type": "cage",
+                "level": "C6",
+                "side": "midline",
+                "cage": {
+                    "approach": "ACDF",
+                    "height": 6,
+                    "width": 17,
+                    "length": 14
+                },
+                "createdAt": "2026-04-29T09:31:06.875Z"
+            }
+        ],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": [],
+        "plates": [
+            {
+                "id": "1777453104379",
+                "level": "C6",
+                "side": "midline",
+                "cranialLevel": "C6",
+                "caudalLevel": "C7",
+                "region": "anterior_cervical",
+                "manufacturer": "Stryker",
+                "system": "Aviator",
+                "createdAt": "2026-04-29T09:31:23.917Z"
+            }
+        ],
+        "artificialDiscs": [
+            {
+                "id": "1777453104377",
+                "level": "C5",
+                "manufacturer": "Spineart",
+                "system": "BAGUERA C",
+                "size": "Large (16×18) · 6 mm",
+                "catalogueRef": "CDP-TI 16 06-S",
+                "createdAt": "2026-04-29T09:30:46.608Z"
+            }
+        ]
+    },
+    "construct": {
+        "elements": [],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "caseScans": [],
+    "ui": {
+        "colourScheme": "default",
+        "viewMode": "cervical",
+        "notePositions": {},
+        "preferences": {
+            "showPelvis": false,
+            "useRegionDefaults": false,
+            "confirmAndNext": false
+        }
+    },
+    "template": {
+        "name": "demo-acdr-acdf",
+        "createdFrom": "dc3e351f-d4eb-41e9-91a2-7283390a9ce4",
+        "createdAt": "2026-04-29T09:32:25.812Z"
+    }
+}

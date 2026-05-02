@@ -1,0 +1,360 @@
+{
+    "schema": {
+        "format": "spinal-instrumentation",
+        "version": 10,
+        "schemaUrl": "https://plan.skeletalsurgery.com/spine/schema/v4/spinal-instrumentation.json",
+        "generator": {
+            "name": "Spinal Instrumentation Plan & Record",
+            "version": "v3.25.01-beta",
+            "url": "https://plan.skeletalsurgery.com/spine"
+        }
+    },
+    "document": {
+        "id": "b30cdfb0-75ad-4c46-86d5-db44a95e9def",
+        "created": "2026-04-29T09:33:28.533Z",
+        "modified": "2026-04-29T09:37:21.610Z",
+        "language": "en"
+    },
+    "patient": {
+        "name": "",
+        "identifier": ""
+    },
+    "case": {
+        "surgeon": "",
+        "date": "",
+        "location": ""
+    },
+    "implantSystem": {
+        "manufacturer": "Stryker",
+        "system": "YUKON OCT"
+    },
+    "plan": {
+        "elements": [
+            {
+                "id": "1777453492654",
+                "type": "screw",
+                "level": "C2",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 24
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:11.526Z"
+            },
+            {
+                "id": "1777453492655",
+                "type": "screw",
+                "level": "C2",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 24
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:11.526Z"
+            },
+            {
+                "id": "1777453492656",
+                "type": "screw",
+                "level": "C3",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:12.569Z"
+            },
+            {
+                "id": "1777453492657",
+                "type": "screw",
+                "level": "C3",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:12.569Z"
+            },
+            {
+                "id": "1777453492658",
+                "type": "screw",
+                "level": "C4",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.109Z"
+            },
+            {
+                "id": "1777453492659",
+                "type": "screw",
+                "level": "C4",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.109Z"
+            },
+            {
+                "id": "1777453492660",
+                "type": "screw",
+                "level": "C5",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.420Z"
+            },
+            {
+                "id": "1777453492661",
+                "type": "screw",
+                "level": "C5",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.420Z"
+            },
+            {
+                "id": "1777453492662",
+                "type": "screw",
+                "level": "C6",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.671Z"
+            },
+            {
+                "id": "1777453492663",
+                "type": "screw",
+                "level": "C6",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 14
+                },
+                "trajectory": "lateral_mass",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.671Z"
+            },
+            {
+                "id": "1777453492664",
+                "type": "screw",
+                "level": "C7",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 4.5,
+                    "length": 26
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.869Z"
+            },
+            {
+                "id": "1777453492665",
+                "type": "screw",
+                "level": "C7",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 4.5,
+                    "length": 26
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:13.869Z"
+            },
+            {
+                "id": "1777453492666",
+                "type": "screw",
+                "level": "T1",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 4.5,
+                    "length": 30
+                },
+                "screwSystem": "YUKON OCT",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:35:14.101Z"
+            },
+            {
+                "id": "1777453492667",
+                "type": "screw",
+                "level": "T1",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 4.5,
+                    "length": 30
+                },
+                "screwSystem": "YUKON OCT",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:35:14.101Z"
+            },
+            {
+                "id": "1777453492670",
+                "type": "screw",
+                "level": "T3",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 28
+                },
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:18.068Z"
+            },
+            {
+                "id": "1777453492671",
+                "type": "screw",
+                "level": "T3",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 28
+                },
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:35:18.068Z"
+            },
+            {
+                "id": "1777453492674",
+                "type": "screw",
+                "level": "T4",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 30
+                },
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:36:33.725Z"
+            },
+            {
+                "id": "1777453492675",
+                "type": "screw",
+                "level": "T4",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 3.5,
+                    "length": 30
+                },
+                "screwSystem": "YUKON OCT",
+                "createdAt": "2026-04-29T09:36:33.725Z"
+            }
+        ],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": [],
+        "plates": [
+            {
+                "id": "1777453492653",
+                "level": "C4",
+                "side": "midline",
+                "cranialLevel": "C4",
+                "caudalLevel": "C7",
+                "region": "anterior_cervical",
+                "manufacturer": "DePuy Synthes",
+                "system": "Skyline",
+                "createdAt": "2026-04-29T09:34:34.793Z"
+            }
+        ],
+        "reconstructionCages": [
+            {
+                "id": "1777453492652",
+                "level": "C4",
+                "caudalLevel": "C6",
+                "bodyResectedLevels": ["C5", "C6"],
+                "createdAt": "2026-04-29T09:34:18.941Z"
+            }
+        ]
+    },
+    "construct": {
+        "elements": [],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "caseScans": [],
+    "ui": {
+        "colourScheme": "gold",
+        "viewMode": "cervical",
+        "notePositions": {},
+        "preferences": {
+            "showPelvis": false,
+            "useRegionDefaults": true,
+            "confirmAndNext": true
+        }
+    },
+    "template": {
+        "name": "demo-c5c6-infection",
+        "createdFrom": "b30cdfb0-75ad-4c46-86d5-db44a95e9def",
+        "createdAt": "2026-04-29T09:37:21.610Z"
+    }
+}

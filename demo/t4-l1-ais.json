@@ -1,0 +1,365 @@
+{
+    "schema": {
+        "format": "spinal-instrumentation",
+        "version": 10,
+        "schemaUrl": "https://plan.skeletalsurgery.com/spine/schema/v4/spinal-instrumentation.json",
+        "generator": {
+            "name": "Spinal Instrumentation Plan & Record",
+            "version": "v3.25.01-beta",
+            "url": "https://plan.skeletalsurgery.com/spine"
+        }
+    },
+    "document": {
+        "id": "b41e361f-a0bd-4950-b6c4-84a42cf53fe7",
+        "created": "2026-04-29T09:06:10.270Z",
+        "modified": "2026-04-29T09:11:05.342Z",
+        "language": "en"
+    },
+    "patient": {
+        "name": "",
+        "identifier": ""
+    },
+    "case": {
+        "surgeon": "",
+        "date": "",
+        "location": ""
+    },
+    "implantSystem": {
+        "manufacturer": "Stryker",
+        "system": "MESA 2"
+    },
+    "plan": {
+        "elements": [
+            {
+                "id": "1777453492601",
+                "type": "screw",
+                "level": "T4",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 30
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:33.989Z"
+            },
+            {
+                "id": "1777453492602",
+                "type": "hook",
+                "level": "T4",
+                "side": "right",
+                "zone": "right",
+                "hook": {
+                    "hookType": "transverse-process-down"
+                },
+                "annotation": "TP Hook",
+                "createdAt": "2026-04-29T09:06:33.989Z"
+            },
+            {
+                "id": "1777453492603",
+                "type": "screw",
+                "level": "T5",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 30
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:38.346Z"
+            },
+            {
+                "id": "1777453492604",
+                "type": "hook",
+                "level": "T5",
+                "side": "right",
+                "zone": "right",
+                "hook": {
+                    "hookType": "pedicle"
+                },
+                "annotation": "Pedicle Hook",
+                "createdAt": "2026-04-29T09:06:38.346Z"
+            },
+            {
+                "id": "1777453492607",
+                "type": "screw",
+                "level": "T7",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:44.228Z"
+            },
+            {
+                "id": "1777453492609",
+                "type": "screw",
+                "level": "T8",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:46.693Z"
+            },
+            {
+                "id": "1777453492610",
+                "type": "screw",
+                "level": "T8",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:46.693Z"
+            },
+            {
+                "id": "1777453492611",
+                "type": "screw",
+                "level": "T9",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:49.541Z"
+            },
+            {
+                "id": "1777453492612",
+                "type": "screw",
+                "level": "T9",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:49.541Z"
+            },
+            {
+                "id": "1777453492613",
+                "type": "screw",
+                "level": "T10",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:52.614Z"
+            },
+            {
+                "id": "1777453492616",
+                "type": "screw",
+                "level": "T11",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:55.041Z"
+            },
+            {
+                "id": "1777453492617",
+                "type": "screw",
+                "level": "T12",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:57.149Z"
+            },
+            {
+                "id": "1777453492618",
+                "type": "screw",
+                "level": "T12",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:06:57.149Z"
+            },
+            {
+                "id": "1777453492619",
+                "type": "screw",
+                "level": "L1",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:07:00.823Z"
+            },
+            {
+                "id": "1777453492620",
+                "type": "screw",
+                "level": "L1",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "uniplanar",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "MESA 2",
+                "createdAt": "2026-04-29T09:07:00.823Z"
+            }
+        ],
+        "rods": [
+            {
+                "id": "rod-left",
+                "side": "left",
+                "diameter": 5.5,
+                "profile": "rail",
+                "contour": "surgeon_contoured"
+            },
+            {
+                "id": "rod-right",
+                "side": "right",
+                "diameter": 5.5,
+                "profile": "rail",
+                "contour": "surgeon_contoured"
+            }
+        ],
+        "forces": [
+            {
+                "id": "1777453492622",
+                "type": "distraction",
+                "level": "T9",
+                "side": "left",
+                "createdAt": "2026-04-29T09:10:09.987Z"
+            },
+            {
+                "id": "1777453492623",
+                "type": "distraction",
+                "level": "T8",
+                "side": "left",
+                "createdAt": "2026-04-29T09:10:13.071Z"
+            },
+            {
+                "id": "1777453492624",
+                "type": "derotation",
+                "direction": "anticlockwise",
+                "level": "T7",
+                "side": "left",
+                "createdAt": "2026-04-29T09:10:16.484Z"
+            },
+            {
+                "id": "1777453492625",
+                "type": "derotation",
+                "direction": "anticlockwise",
+                "level": "T10",
+                "side": "left",
+                "createdAt": "2026-04-29T09:10:19.198Z"
+            },
+            {
+                "id": "1777453492626",
+                "type": "derotation",
+                "direction": "anticlockwise",
+                "level": "T7",
+                "side": "right",
+                "createdAt": "2026-04-29T09:10:21.824Z"
+            },
+            {
+                "id": "1777453492627",
+                "type": "derotation",
+                "direction": "anticlockwise",
+                "level": "T10",
+                "side": "right",
+                "createdAt": "2026-04-29T09:10:23.924Z"
+            },
+            {
+                "id": "1777453492629",
+                "type": "compression",
+                "level": "T9",
+                "side": "right",
+                "createdAt": "2026-04-29T09:10:33.979Z"
+            },
+            {
+                "id": "1777453492630",
+                "type": "compression",
+                "level": "T8",
+                "side": "right",
+                "createdAt": "2026-04-29T09:10:37.095Z"
+            }
+        ],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": [
+            {
+                "id": "1777453492621",
+                "level": "T12",
+                "text": "Last visible rib",
+                "showArrow": true,
+                "createdAt": "2026-04-29T09:08:05.016Z"
+            }
+        ]
+    },
+    "construct": {
+        "elements": [],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "caseScans": [],
+    "ui": {
+        "colourScheme": "gold",
+        "viewMode": "thoracolumbar",
+        "notePositions": {
+            "1777453492621": {
+                "offsetX": -172,
+                "offsetY": 24
+            }
+        },
+        "preferences": {
+            "showPelvis": false,
+            "useRegionDefaults": true,
+            "confirmAndNext": true
+        }
+    },
+    "template": {
+        "name": "demo-t4-l1-ais",
+        "createdFrom": "b41e361f-a0bd-4950-b6c4-84a42cf53fe7",
+        "createdAt": "2026-04-29T09:11:05.342Z"
+    }
+}

@@ -1,0 +1,193 @@
+{
+    "schema": {
+        "format": "spinal-instrumentation",
+        "version": 10,
+        "schemaUrl": "https://plan.skeletalsurgery.com/spine/schema/v4/spinal-instrumentation.json",
+        "generator": {
+            "name": "Spinal Instrumentation Plan & Record",
+            "version": "v3.25.01-beta",
+            "url": "https://plan.skeletalsurgery.com/spine"
+        }
+    },
+    "document": {
+        "id": "1cb5dc43-1066-44ec-8a82-d3ba57edbd71",
+        "created": "2026-04-29T09:21:41.630Z",
+        "modified": "2026-04-29T09:23:44.824Z",
+        "language": "en"
+    },
+    "patient": {
+        "name": "",
+        "identifier": ""
+    },
+    "case": {
+        "surgeon": "",
+        "date": "",
+        "location": ""
+    },
+    "implantSystem": {
+        "manufacturer": "DePuy Synthes",
+        "system": "TriALTIS"
+    },
+    "plan": {
+        "elements": [
+            {
+                "id": "1777453492638",
+                "type": "screw",
+                "level": "T10",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 5.5,
+                    "length": 40
+                },
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:32.530Z"
+            },
+            {
+                "id": "1777453492639",
+                "type": "screw",
+                "level": "T10",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 5.5,
+                    "length": 40
+                },
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:32.530Z"
+            },
+            {
+                "id": "1777453492640",
+                "type": "screw",
+                "level": "T11",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 5.5,
+                    "length": 40
+                },
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:39.001Z"
+            },
+            {
+                "id": "1777453492641",
+                "type": "screw",
+                "level": "T11",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 5.5,
+                    "length": 40
+                },
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:39.001Z"
+            },
+            {
+                "id": "1777453492644",
+                "type": "screw",
+                "level": "L1",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:52.023Z"
+            },
+            {
+                "id": "1777453492645",
+                "type": "screw",
+                "level": "L1",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:52.023Z"
+            },
+            {
+                "id": "1777453492646",
+                "type": "screw",
+                "level": "L2",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:55.482Z"
+            },
+            {
+                "id": "1777453492647",
+                "type": "screw",
+                "level": "L2",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "TriALTIS",
+                "createdAt": "2026-04-29T09:22:55.482Z"
+            },
+            {
+                "id": "1777453492648",
+                "type": "marker",
+                "markerType": "unstable",
+                "level": "T12",
+                "side": "midline",
+                "zone": "mid",
+                "createdAt": "2026-04-29T09:23:04.351Z"
+            }
+        ],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "construct": {
+        "elements": [],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "caseScans": [],
+    "ui": {
+        "colourScheme": "red",
+        "viewMode": "thoracolumbar",
+        "notePositions": {},
+        "preferences": {
+            "showPelvis": false,
+            "useRegionDefaults": true,
+            "confirmAndNext": true
+        }
+    },
+    "template": {
+        "name": "demo-t10-l2-trauma",
+        "createdFrom": "1cb5dc43-1066-44ec-8a82-d3ba57edbd71",
+        "createdAt": "2026-04-29T09:23:44.824Z"
+    }
+}

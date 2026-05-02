@@ -1,0 +1,11 @@
+{
+    "version": 1,
+    "cases": [
+        { "slug": "l5s1-tlif", "file": "l5s1-tlif.json" },
+        { "slug": "acdr-acdf", "file": "acdr-acdf.json" },
+        { "slug": "t4-l1-ais", "file": "t4-l1-ais.json" },
+        { "slug": "pso", "file": "pso.json" },
+        { "slug": "c5c6-infection", "file": "c5c6-infection.json" },
+        { "slug": "t10-l2-trauma", "file": "t10-l2-trauma.json" }
+    ]
+}

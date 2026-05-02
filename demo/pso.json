@@ -1,0 +1,447 @@
+{
+    "schema": {
+        "format": "spinal-instrumentation",
+        "version": 10,
+        "schemaUrl": "https://plan.skeletalsurgery.com/spine/schema/v4/spinal-instrumentation.json",
+        "generator": {
+            "name": "Spinal Instrumentation Plan & Record",
+            "version": "v3.25.01-beta",
+            "url": "https://plan.skeletalsurgery.com/spine"
+        }
+    },
+    "document": {
+        "id": "8c046e9a-c46a-49a4-aa46-fbd817413633",
+        "created": "2026-04-29T09:39:29.189Z",
+        "modified": "2026-04-29T09:43:12.027Z",
+        "language": "en"
+    },
+    "patient": {
+        "name": "",
+        "identifier": ""
+    },
+    "case": {
+        "surgeon": "",
+        "date": "",
+        "location": ""
+    },
+    "implantSystem": {
+        "manufacturer": "Globus Medical",
+        "system": "Reline"
+    },
+    "plan": {
+        "elements": [
+            {
+                "id": "1777453492696",
+                "type": "screw",
+                "level": "T10",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:46.943Z"
+            },
+            {
+                "id": "1777453492697",
+                "type": "screw",
+                "level": "T10",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 5.5,
+                    "length": 35
+                },
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:46.943Z"
+            },
+            {
+                "id": "1777453492698",
+                "type": "screw",
+                "level": "T11",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:47.417Z"
+            },
+            {
+                "id": "1777453492699",
+                "type": "screw",
+                "level": "T11",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:47.417Z"
+            },
+            {
+                "id": "1777453492700",
+                "type": "screw",
+                "level": "T12",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "Reline",
+                "createdAt": "2026-04-29T09:39:47.959Z"
+            },
+            {
+                "id": "1777453492701",
+                "type": "screw",
+                "level": "T12",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 35
+                },
+                "screwSystem": "Reline",
+                "createdAt": "2026-04-29T09:39:47.959Z"
+            },
+            {
+                "id": "1777453492702",
+                "type": "screw",
+                "level": "L1",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:48.316Z"
+            },
+            {
+                "id": "1777453492703",
+                "type": "screw",
+                "level": "L1",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:48.316Z"
+            },
+            {
+                "id": "1777453492704",
+                "type": "screw",
+                "level": "L2",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:49.016Z"
+            },
+            {
+                "id": "1777453492705",
+                "type": "screw",
+                "level": "L2",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:49.016Z"
+            },
+            {
+                "id": "1777453492706",
+                "type": "screw",
+                "level": "L3",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:49.408Z"
+            },
+            {
+                "id": "1777453492707",
+                "type": "screw",
+                "level": "L3",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 6.5,
+                    "length": 40
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:49.408Z"
+            },
+            {
+                "id": "1777453492710",
+                "type": "screw",
+                "level": "L5",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 45
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:53.959Z"
+            },
+            {
+                "id": "1777453492711",
+                "type": "screw",
+                "level": "L5",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 45
+                },
+                "trajectory": "pedicle",
+                "screwSystem": "Reline",
+                "headSpec": {
+                    "catalogueRef": "polyaxial"
+                },
+                "createdAt": "2026-04-29T09:39:53.959Z"
+            },
+            {
+                "id": "1777453492712",
+                "type": "screw",
+                "level": "S1",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 40
+                },
+                "screwSystem": "Reline",
+                "createdAt": "2026-04-29T09:39:57.049Z"
+            },
+            {
+                "id": "1777453492713",
+                "type": "screw",
+                "level": "S1",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 7.5,
+                    "length": 40
+                },
+                "screwSystem": "Reline",
+                "createdAt": "2026-04-29T09:39:57.049Z"
+            },
+            {
+                "id": "1777453492716",
+                "type": "screw",
+                "level": "S2AI",
+                "side": "left",
+                "zone": "left",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 8.5,
+                    "length": 80
+                },
+                "screwSystem": "Reline",
+                "createdAt": "2026-04-29T09:40:06.868Z"
+            },
+            {
+                "id": "1777453492717",
+                "type": "screw",
+                "level": "S2AI",
+                "side": "right",
+                "zone": "right",
+                "screw": {
+                    "headType": "polyaxial",
+                    "diameter": 8.5,
+                    "length": 80
+                },
+                "screwSystem": "Reline",
+                "createdAt": "2026-04-29T09:40:06.868Z"
+            },
+            {
+                "id": "1777453492718",
+                "type": "osteotomy",
+                "level": "L4",
+                "side": "midline",
+                "zone": "mid",
+                "osteotomy": {
+                    "osteotomyType": "PSO",
+                    "schwabGrade": 3,
+                    "correctionAngle": 25
+                },
+                "createdAt": "2026-04-29T09:41:13.598Z"
+            },
+            {
+                "id": "1777453492719",
+                "type": "cage",
+                "level": "L3",
+                "side": "bilateral",
+                "cage": {
+                    "approach": "PLIF",
+                    "height": 10,
+                    "width": 10,
+                    "length": 25,
+                    "lordosis": 0
+                },
+                "createdAt": "2026-04-29T09:41:29.076Z"
+            },
+            {
+                "id": "1777453492720",
+                "type": "cage",
+                "level": "L4",
+                "side": "bilateral",
+                "cage": {
+                    "approach": "PLIF",
+                    "height": 10,
+                    "width": 10,
+                    "length": 25,
+                    "lordosis": 0
+                },
+                "createdAt": "2026-04-29T09:41:34.159Z"
+            },
+            {
+                "id": "1777453492721",
+                "type": "cage",
+                "level": "L5",
+                "side": "midline",
+                "cage": {
+                    "approach": "ALIF",
+                    "height": 12,
+                    "width": 35,
+                    "length": 25,
+                    "lordosis": 10
+                },
+                "createdAt": "2026-04-29T09:41:42.519Z"
+            },
+            {
+                "id": "1777453492722",
+                "type": "cage",
+                "level": "L2",
+                "side": "left",
+                "cage": {
+                    "approach": "XLIF",
+                    "height": 10,
+                    "width": 18,
+                    "length": 50,
+                    "lordosis": 0
+                },
+                "createdAt": "2026-04-29T09:41:57.088Z"
+            },
+            {
+                "id": "1777453492723",
+                "type": "cage",
+                "level": "L1",
+                "side": "left",
+                "cage": {
+                    "approach": "XLIF",
+                    "height": 10,
+                    "width": 18,
+                    "length": 50,
+                    "lordosis": 0
+                },
+                "createdAt": "2026-04-29T09:42:03.912Z"
+            }
+        ],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "construct": {
+        "elements": [],
+        "rods": [],
+        "forces": [],
+        "boneGraft": {
+            "types": [],
+            "notes": ""
+        },
+        "notes": []
+    },
+    "caseScans": [],
+    "ui": {
+        "colourScheme": "midnight",
+        "viewMode": "t10_pelvis",
+        "notePositions": {},
+        "preferences": {
+            "showPelvis": true,
+            "useRegionDefaults": true,
+            "confirmAndNext": true
+        }
+    },
+    "template": {
+        "name": "demo-pso",
+        "createdFrom": "8c046e9a-c46a-49a4-aa46-fbd817413633",
+        "createdAt": "2026-04-29T09:43:12.027Z"
+    }
+}
