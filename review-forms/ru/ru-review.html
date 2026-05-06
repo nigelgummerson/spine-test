@@ -202,7 +202,7 @@
         </div>
         <div class="progress-bar">
             <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
-            <div class="progress-text" id="progress-text">0 of 907 items reviewed (0%)</div>
+            <div class="progress-text" id="progress-text">0 of 908 items reviewed (0%)</div>
             <div class="save-hint" id="save-hint"></div>
         </div>
     </div>
@@ -236,7 +236,7 @@
             <a href="#section-10" class="nav-link" data-section="10">Linked Screens (Sync) <span class="nav-count" id="nav-count-10">0/2</span></a>
             <a href="#section-11" class="nav-link" data-section="11">Export &amp; Column Headers <span class="nav-count" id="nav-count-11">0/9</span></a>
             <a href="#section-12" class="nav-link" data-section="12">Help Modal <span class="nav-count" id="nav-count-12">0/90</span></a>
-            <a href="#section-13" class="nav-link" data-section="13">Common Buttons &amp; Shortcuts <span class="nav-count" id="nav-count-13">0/10</span></a>
+            <a href="#section-13" class="nav-link" data-section="13">Common Buttons &amp; Shortcuts <span class="nav-count" id="nav-count-13">0/11</span></a>
             <a href="#section-14" class="nav-link" data-section="14">Alerts &amp; Confirmations <span class="nav-count" id="nav-count-14">0/46</span></a>
             <a href="#section-15" class="nav-link" data-section="15">Credits &amp; Disclaimer <span class="nav-count" id="nav-count-15">0/19</span></a>
             <a href="#section-16" class="nav-link" data-section="16">Version History Modal <span class="nav-count" id="nav-count-16">0/1</span></a>
@@ -15462,6 +15462,39 @@
                 </div>
             </div>
         </div>
+        <div class="review-item" data-key="button.done" data-section="13" id="item-button.done">
+            <div class="item-header">
+                <code class="key-label">button.done</code>
+                
+            </div>
+            <div class="item-grid">
+                <div class="col-english">
+                    <label>English</label>
+                    <div class="english-text">Done</div>
+                </div>
+                <div class="col-translation">
+                    <label>Русский</label>
+                    <textarea class="translation-field" data-key="button.done" data-original="Готово">Готово</textarea>
+                </div>
+                <div class="col-status">
+                    <label>Status</label>
+                    <div class="status-radios">
+                        <label class="radio-label correct-label">
+                            <input type="radio" name="status-button.done" value="correct" data-key="button.done">
+                            <span>Correct</span>
+                        </label>
+                        <label class="radio-label corrected-label">
+                            <input type="radio" name="status-button.done" value="corrected" data-key="button.done">
+                            <span>Corrected</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-comment">
+                    <label>Comment <span class="optional">(optional)</span></label>
+                    <input type="text" class="comment-field" data-key="button.done" placeholder="Any notes for the developer...">
+                </div>
+            </div>
+        </div>
         <div class="review-item" data-key="button.remove" data-section="13" id="item-button.remove">
             <div class="item-header">
                 <code class="key-label">button.remove</code>
@@ -30397,7 +30430,7 @@ Portrait mode gives each column more vertical space, showing the full spine with
     (function() {
         const LANG = "ru";
         const STORAGE_KEY = "spine_review_" + LANG;
-        const TOTAL = 907;
+        const TOTAL = 908;
 
         // --- Reviewer details ---
 
