@@ -170,7 +170,7 @@
         "viewMode": "t10_pelvis",
         "notePositions": {},
         "preferences": {
-            "showPelvis": true,
+            "showPelvis": false,
             "useRegionDefaults": true,
             "confirmAndNext": true
         }
