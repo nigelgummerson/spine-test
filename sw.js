@@ -1,6 +1,15 @@
 // Service worker for offline caching — Spinal Instrumentation Plan & Record
-// Cache-first strategy: serve from cache, fall back to network, update cache in background.
-// Cache name includes a version hash so old caches are cleaned up on deploy.
+//
+// Per-request strategy:
+//   - version.json  → network-first (freshness probe for useVersionCheck).
+//   - navigations (the HTML document) → network-first, cache fallback. This is
+//     what makes a deploy land on the FIRST reload: the entry document is always
+//     fetched fresh, so it references the new content-hashed asset graph. (The
+//     old stale-while-revalidate served a cached index.html, which referenced the
+//     OLD assets, so a deploy needed two reloads — the "double-reload gotcha".)
+//   - everything else (content-hashed assets, icons, fonts) → stale-while-
+//     revalidate: instant from cache, refreshed in the background.
+// Cache name includes the app version so old caches are cleaned up on deploy.
 
 const CACHE_NAME = 'skeletal-plan-v3.40.00-beta';
 // Derive the base from the service worker's own URL so precache paths are correct
@@ -21,7 +30,12 @@ const PRECACHE_URLS = [
 self.addEventListener('install', (event) => {
     // Skip waiting so the new SW activates immediately
     self.skipWaiting();
-    event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS)));
+    // Cache each URL independently rather than cache.addAll(), which rejects the
+    // whole install (and leaves the app with no offline cache) if any single URL
+    // 404s. A missing icon must not break the app shell on a locked-down machine.
+    event.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => Promise.allSettled(PRECACHE_URLS.map((url) => cache.add(url)))),
+    );
 });
 
 self.addEventListener('activate', (event) => {
@@ -58,6 +72,34 @@ self.addEventListener('fetch', (event) => {
     // disconnected surgeon does not lose the rest of the app.
     if (request.url.endsWith('/version.json')) {
         event.respondWith(fetch(request).catch(() => caches.open(CACHE_NAME).then((c) => c.match(request))));
+        return;
+    }
+
+    // Navigations (the HTML document) → network-first so a deploy lands on the
+    // first reload. Fall back to the cached document, then the app shell, when
+    // offline. The app is a client-routed SPA (?data=, ?tab=, ?demo=), so the
+    // shell is a valid response for any in-scope navigation.
+    if (request.mode === 'navigate') {
+        event.respondWith(
+            fetch(request)
+                .then((networkResponse) => {
+                    if (networkResponse.ok) {
+                        const copy = networkResponse.clone();
+                        caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+                    }
+                    return networkResponse;
+                })
+                .catch(async () => {
+                    const cache = await caches.open(CACHE_NAME);
+                    return (
+                        (await cache.match(request)) ||
+                        (await cache.match(request, { ignoreSearch: true })) ||
+                        (await cache.match(BASE_PATH)) ||
+                        (await cache.match(BASE_PATH + 'index.html')) ||
+                        Response.error()
+                    );
+                }),
+        );
         return;
     }
 
