@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skeletal Plan — UDI Scan Test Sheet</title>
+  <!-- Tailwind CDN compiles per-page CSS dynamically; SRI is structurally
+       incompatible with this service (every response differs). For a static
+       build use the Tailwind CLI output instead. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- bwip-js pinned to 4.11.1 with Subresource Integrity -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bwip-js@4.11.1/dist/bwip-js-min.js"
+    integrity="sha384-SI+RktpoKw18EK7dafjdZY8XY+MXAPo48bl4Cycw9hgrV0eq2LAM1PwW6i+kSFRh"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    @media print {
+      body { font-size: 9pt; }
+      .no-print { display: none !important; }
+      .page-break { page-break-before: always; }
+      main { max-width: 100% !important; padding: 0 !important; }
+    }
+    canvas { image-rendering: pixelated; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<main class="max-w-5xl mx-auto px-4 py-8">
+
+  <!-- Header -->
+  <div class="mb-8">
+    <h1 class="text-2xl font-bold text-slate-900">Skeletal Plan — UDI Scan Test Sheet</h1>
+    <p class="mt-1 text-sm text-slate-500">plan.skeletalsurgery.com/spine &nbsp;·&nbsp; QA &amp; demo reference</p>
+
+    <div class="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
+      <p class="font-semibold mb-1">How to use this page</p>
+      <ul class="list-disc list-inside space-y-1 text-blue-800">
+        <li>Open <strong>Skeletal Plan</strong> and tap the scan button in any implant modal or the Case Scan modal.</li>
+        <li><strong>Camera scan:</strong> point the in-app camera at a barcode on this page (zoom to ~200% for small codes).</li>
+        <li><strong>Wedge / HID scanner:</strong> focus the text-entry field in the scan modal, then scan the barcode.</li>
+        <li><strong>Manual entry:</strong> type a GTIN from the table below directly into the scan modal's GTIN field.</li>
+      </ul>
+      <p class="mt-2 text-xs text-blue-700">
+        These are publicly-assigned manufacturer UDI codes (GUDID / EUDAMED). This page contains no patient data and makes no clinical claims.
+      </p>
+    </div>
+  </div>
+
+  <!-- Manual Entry Table -->
+  <section class="mb-10">
+    <h2 class="text-lg font-semibold text-slate-900 mb-3">Manual-entry GTINs</h2>
+    <p class="text-sm text-slate-600 mb-3">Type any GTIN below into the scan modal's manual-entry field. Group rows by company.</p>
+    <div class="overflow-x-auto rounded-lg border border-slate-200 bg-white">
+      <table class="w-full text-sm">
+        <thead class="bg-slate-100 text-slate-700 text-left">
+          <tr>
+            <th class="px-3 py-2 font-semibold">Company</th>
+            <th class="px-3 py-2 font-semibold">System</th>
+            <th class="px-3 py-2 font-semibold">Size</th>
+            <th class="px-3 py-2 font-semibold">GTIN</th>
+            <th class="px-3 py-2 font-semibold">Head type</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          <!-- Medtronic -->
+          <tr class="bg-purple-50">
+            <td class="px-3 py-2 font-medium text-purple-800">Medtronic</td>
+            <td class="px-3 py-2">Solera</td>
+            <td class="px-3 py-2 font-mono">4.5×45</td>
+            <td class="px-3 py-2 font-mono text-xs">00643169745087</td>
+            <td class="px-3 py-2">Polyaxial</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-purple-800"></td>
+            <td class="px-3 py-2">Solera</td>
+            <td class="px-3 py-2 font-mono">8.5×60</td>
+            <td class="px-3 py-2 font-mono text-xs">00643169768529</td>
+            <td class="px-3 py-2">Polyaxial</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-purple-800"></td>
+            <td class="px-3 py-2">Solera</td>
+            <td class="px-3 py-2 font-mono">7.5×35</td>
+            <td class="px-3 py-2 font-mono text-xs">00643169783898</td>
+            <td class="px-3 py-2">Unclassified</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-purple-800"></td>
+            <td class="px-3 py-2">ModuLeX</td>
+            <td class="px-3 py-2 font-mono">7.5×40 shank</td>
+            <td class="px-3 py-2 font-mono text-xs">00763000435400</td>
+            <td class="px-3 py-2">Shank</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-purple-800"></td>
+            <td class="px-3 py-2">ModuLeX</td>
+            <td class="px-3 py-2 font-mono">MAS head</td>
+            <td class="px-3 py-2 font-mono text-xs">20763000608105</td>
+            <td class="px-3 py-2">Polyaxial (MAS)</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-purple-800"></td>
+            <td class="px-3 py-2">ModuLeX</td>
+            <td class="px-3 py-2 font-mono">Set screw</td>
+            <td class="px-3 py-2 font-mono text-xs">00763000435769</td>
+            <td class="px-3 py-2">Set screw</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-purple-800"></td>
+            <td class="px-3 py-2">ModuLeX</td>
+            <td class="px-3 py-2 font-mono">7.5×55 monoaxial</td>
+            <td class="px-3 py-2 font-mono text-xs">00763000971984</td>
+            <td class="px-3 py-2">Monoaxial</td>
+          </tr>
+          <!-- Stryker -->
+          <tr class="bg-orange-50">
+            <td class="px-3 py-2 font-medium text-orange-800">Stryker</td>
+            <td class="px-3 py-2">Xia 3</td>
+            <td class="px-3 py-2 font-mono">7.5×35</td>
+            <td class="px-3 py-2 font-mono text-xs">07613252046097</td>
+            <td class="px-3 py-2">Polyaxial</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">Xia 3</td>
+            <td class="px-3 py-2 font-mono">6.5×90</td>
+            <td class="px-3 py-2 font-mono text-xs">07613327352634</td>
+            <td class="px-3 py-2">Polyaxial</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">Xia 3</td>
+            <td class="px-3 py-2 font-mono">9.5×60</td>
+            <td class="px-3 py-2 font-mono text-xs">07613252019367</td>
+            <td class="px-3 py-2">Monoaxial</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">Xia 3</td>
+            <td class="px-3 py-2 font-mono">6.5×45</td>
+            <td class="px-3 py-2 font-mono text-xs">04546540562241</td>
+            <td class="px-3 py-2">Polyaxial</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">ES2</td>
+            <td class="px-3 py-2 font-mono">8.5×50</td>
+            <td class="px-3 py-2 font-mono text-xs">07613327394184</td>
+            <td class="px-3 py-2">Polyaxial, cannulated (EU)</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">ES2</td>
+            <td class="px-3 py-2 font-mono">8.5×50</td>
+            <td class="px-3 py-2 font-mono text-xs">07613327002478</td>
+            <td class="px-3 py-2">Polyaxial, cannulated (US)</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">MESA 2 (K2M→Stryker)</td>
+            <td class="px-3 py-2 font-mono">4.5×75</td>
+            <td class="px-3 py-2 font-mono text-xs">10888857231658</td>
+            <td class="px-3 py-2">Deformity 360°</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">MESA 2 (K2M→Stryker)</td>
+            <td class="px-3 py-2 font-mono">6.5×100</td>
+            <td class="px-3 py-2 font-mono text-xs">10888857046863</td>
+            <td class="px-3 py-2">Deformity polyaxial</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-orange-800"></td>
+            <td class="px-3 py-2">MESA 2 (K2M→Stryker)</td>
+            <td class="px-3 py-2 font-mono">5.5×75</td>
+            <td class="px-3 py-2 font-mono text-xs">10888857233546</td>
+            <td class="px-3 py-2">Cortical polyaxial</td>
+          </tr>
+          <!-- Globus -->
+          <tr class="bg-green-50">
+            <td class="px-3 py-2 font-medium text-green-800">Globus Medical</td>
+            <td class="px-3 py-2">CREO</td>
+            <td class="px-3 py-2 font-mono">6.5×20</td>
+            <td class="px-3 py-2 font-mono text-xs">00889095095005</td>
+            <td class="px-3 py-2">Uniplanar</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-green-800"></td>
+            <td class="px-3 py-2">CREO</td>
+            <td class="px-3 py-2 font-mono">8.5×95</td>
+            <td class="px-3 py-2 font-mono text-xs">00889095119084</td>
+            <td class="px-3 py-2">Uniplanar</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-green-800"></td>
+            <td class="px-3 py-2">CREO</td>
+            <td class="px-3 py-2 font-mono">4.0×50</td>
+            <td class="px-3 py-2 font-mono text-xs">00889095015041</td>
+            <td class="px-3 py-2">Unclassified</td>
+          </tr>
+          <!-- DePuy Synthes -->
+          <tr class="bg-blue-50">
+            <td class="px-3 py-2 font-medium text-blue-800">DePuy Synthes</td>
+            <td class="px-3 py-2">EXPEDIUM</td>
+            <td class="px-3 py-2 font-mono">Rod 5.5×120 mm</td>
+            <td class="px-3 py-2 font-mono text-xs">10705034566450</td>
+            <td class="px-3 py-2">Rod</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-blue-800"></td>
+            <td class="px-3 py-2">VIPER 2</td>
+            <td class="px-3 py-2 font-mono">Rod 5.5×120 mm</td>
+            <td class="px-3 py-2 font-mono text-xs">10705034182537</td>
+            <td class="px-3 py-2">Rod</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-blue-800"></td>
+            <td class="px-3 py-2">TriALTIS</td>
+            <td class="px-3 py-2 font-mono">6.5×35</td>
+            <td class="px-3 py-2 font-mono text-xs">10705034643816</td>
+            <td class="px-3 py-2">Screw</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-2 text-blue-800"></td>
+            <td class="px-3 py-2">MATRIX</td>
+            <td class="px-3 py-2 font-mono">6.0 mm</td>
+            <td class="px-3 py-2 font-mono text-xs">10705034747965</td>
+            <td class="px-3 py-2">Screw</td>
+          </tr>
+          <tr class="bg-slate-50">
+            <td class="px-3 py-2 text-blue-800"></td>
+            <td class="px-3 py-2">Mountaineer</td>
+            <td class="px-3 py-2 font-mono">Rod 4.75×600 mm</td>
+            <td class="px-3 py-2 font-mono text-xs">10705034290324</td>
+            <td class="px-3 py-2">Rod</td>
+          </tr>
+          <!-- Not-found -->
+          <tr class="bg-red-50">
+            <td class="px-3 py-2 font-medium text-red-700">Not-found test</td>
+            <td class="px-3 py-2 text-slate-500 italic">Unknown</td>
+            <td class="px-3 py-2 font-mono">—</td>
+            <td class="px-3 py-2 font-mono text-xs">99999999999999</td>
+            <td class="px-3 py-2 text-red-600">Should show "not found"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Medtronic section -->
+  <section class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-purple-500"></div>
+      <h2 class="text-xl font-bold text-slate-900">Medtronic</h2>
+    </div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-3">Solera — GS1 DataMatrix (GTIN + lot + expiry)</h3>
+    <div id="solera-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-2">ModuLeX — modular trio (shank / head / set screw)</h3>
+    <p class="text-sm text-slate-500 mb-3">Scan all three into the same screw slot in the ModuLeX modal. Each is a separate trade item with its own lot and expiry.</p>
+    <div id="modulex-trio" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-3"></div>
+
+    <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-800 mb-6">
+      <strong>Cross-system block test:</strong> scan the ModuLeX Head GTIN (<code class="font-mono">20763000608105</code>) while a <em>Xia 3</em> modal is open. The app must display a "Component not compatible" dialog — not silently switch systems.
+    </div>
+  </section>
+
+  <!-- Stryker section -->
+  <section class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-orange-500"></div>
+      <h2 class="text-xl font-bold text-slate-900">Stryker</h2>
+    </div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-3">Xia 3 — GS1 DataMatrix</h3>
+    <div id="xia3-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-2">Xia 3 — HIBC two-part (primary + secondary)</h3>
+    <p class="text-sm text-slate-500 mb-3">Scan the <strong>primary</strong> first (product identity), then the <strong>secondary</strong> (lot + expiry) within 5 seconds. The app merges them into one UdiRecord.</p>
+    <div id="xia3-hibc" class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-6"></div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-2">ES2 — three-path test (all resolve to the same implant)</h3>
+    <p class="text-sm text-slate-500 mb-3">HIBC primary, EU sterile GTIN, and US non-sterile GTIN all identify the same ES2 polyaxial Ø8.5×50 mm cannulated screw. The US GTIN additionally resolves <code>bladeLength = long</code>.</p>
+    <div id="es2-paths" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-3">MESA 2 (K2M, now Stryker) — GS1 DataMatrix</h3>
+    <div id="mesa2-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+  </section>
+
+  <!-- Globus Medical section -->
+  <section class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-green-500"></div>
+      <h2 class="text-xl font-bold text-slate-900">Globus Medical</h2>
+    </div>
+    <h3 class="text-base font-semibold text-slate-700 mb-3">CREO — GS1 DataMatrix</h3>
+    <div id="creo-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+  </section>
+
+  <!-- DePuy Synthes section -->
+  <section class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+      <h2 class="text-xl font-bold text-slate-900">DePuy Synthes</h2>
+    </div>
+    <h3 class="text-base font-semibold text-slate-700 mb-3">EXPEDIUM / VIPER 2 / TriALTIS / MATRIX / Mountaineer — GS1 DataMatrix</h3>
+    <div id="depuy-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+  </section>
+
+  <!-- Not-found test section -->
+  <section class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-red-400"></div>
+      <h2 class="text-xl font-bold text-slate-900">Not-found test</h2>
+    </div>
+    <p class="text-sm text-slate-600 mb-3">Fake GTIN — should trigger a "not found" message in the scan modal (no catalogue record exists).</p>
+    <div id="not-found" class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-6"></div>
+  </section>
+
+  <footer class="text-xs text-slate-400 border-t border-slate-200 pt-4 mt-6">
+    Skeletal Plan UDI Scan Test Sheet &nbsp;·&nbsp; plan.skeletalsurgery.com/spine &nbsp;·&nbsp; All GTINs are publicly-assigned manufacturer UDI codes. No patient data. No clinical claims.
+  </footer>
+</main>
+
+<script>
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+function buildDmPayload(gtin, lot, expiry) {
+  // GS1 DataMatrix: AI(01) GTIN-14, optional AI(17) expiry YYMMDD, AI(10) lot
+  // Using ^FNC1 as separator for bwip-js parsefnc mode
+  let s = '01' + gtin;
+  if (expiry) s += '17' + expiry;
+  if (lot) s += '10' + lot;
+  return s;
+}
+
+function buildGs1Parens(gtin, lot, expiry) {
+  let s = '(01)' + gtin;
+  if (expiry) s += '(17)' + expiry;
+  if (lot) s += '(10)' + lot;
+  return s;
+}
+
+function formatExpiry(yymmdd) {
+  if (!yymmdd) return '—';
+  return '20' + yymmdd.slice(0, 2) + '-' + yymmdd.slice(2, 4) + '-' + yymmdd.slice(4, 6);
+}
+
+// Render a GS1 DataMatrix card into a container element
+function makeGtinCard(containerId, opts) {
+  // opts: { label, gtin, lot, expiry, note }
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const card = document.createElement('div');
+  card.className = 'bg-white rounded-lg border border-slate-200 p-6 flex flex-col gap-2';
+
+  // Label
+  const labelEl = document.createElement('div');
+  labelEl.className = 'text-sm font-semibold text-slate-800';
+  labelEl.textContent = opts.label;
+  card.appendChild(labelEl);
+
+  // Meta table
+  const meta = [
+    ['GTIN', opts.gtin],
+    opts.lot ? ['Lot', opts.lot] : null,
+    opts.expiry ? ['Expiry', formatExpiry(opts.expiry)] : null,
+  ].filter(Boolean);
+  const metaEl = document.createElement('dl');
+  metaEl.className = 'text-xs text-slate-600 grid grid-cols-[auto_1fr] gap-x-2';
+  meta.forEach(function(row) {
+    const dt = document.createElement('dt');
+    dt.className = 'font-medium text-slate-500';
+    dt.textContent = row[0];
+    const dd = document.createElement('dd');
+    dd.className = 'font-mono';
+    dd.textContent = row[1];
+    metaEl.appendChild(dt);
+    metaEl.appendChild(dd);
+  });
+  card.appendChild(metaEl);
+
+  // Canvas
+  const canvasId = 'dm-' + opts.gtin + '-' + containerId;
+  const canvas = document.createElement('canvas');
+  canvas.id = canvasId;
+  canvas.className = 'mx-auto block border border-slate-100 rounded my-3';
+  card.appendChild(canvas);
+
+  // Raw string
+  const raw = document.createElement('p');
+  raw.className = 'text-xs font-mono text-slate-400 break-all';
+  raw.textContent = buildGs1Parens(opts.gtin, opts.lot, opts.expiry);
+  card.appendChild(raw);
+
+  if (opts.note) {
+    const note = document.createElement('p');
+    note.className = 'text-xs text-amber-700 bg-amber-50 rounded px-2 py-1';
+    note.textContent = opts.note;
+    card.appendChild(note);
+  }
+
+  container.appendChild(card);
+
+  // Render barcode
+  try {
+    bwipjs.toCanvas(canvasId, {
+      bcid: 'datamatrix',
+      text: buildDmPayload(opts.gtin, opts.lot, opts.expiry),
+      scale: 3,
+      parsefnc: true,
+    });
+  } catch (e) {
+    canvas.style.display = 'none';
+    const err = document.createElement('p');
+    err.className = 'text-xs text-red-500';
+    err.textContent = 'Barcode error: ' + e.message;
+    card.appendChild(err);
+  }
+}
+
+// Render a HIBC Code 128 card (primary or secondary)
+function makeHibcCard(containerId, opts) {
+  // opts: { label, hibc, kind ('primary'|'secondary'), ref, lot, expiry, note }
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const card = document.createElement('div');
+  card.className = 'bg-white rounded-lg border border-slate-200 p-6 flex flex-col gap-2';
+
+  // Header row: label + kind badge
+  const headerRow = document.createElement('div');
+  headerRow.className = 'flex items-start justify-between gap-2';
+  const labelEl = document.createElement('div');
+  labelEl.className = 'text-sm font-semibold text-slate-800';
+  labelEl.textContent = opts.label;
+  const badge = document.createElement('span');
+  badge.className = opts.kind === 'primary'
+    ? 'shrink-0 text-xs font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700'
+    : 'shrink-0 text-xs font-medium px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700';
+  badge.textContent = opts.kind === 'primary' ? 'PRIMARY' : 'SECONDARY';
+  headerRow.appendChild(labelEl);
+  headerRow.appendChild(badge);
+  card.appendChild(headerRow);
+
+  // Meta
+  const metaRows = [
+    opts.ref ? ['REF', opts.ref] : null,
+    opts.lot ? ['Lot', opts.lot] : null,
+    opts.expiry ? ['Expiry', opts.expiry] : null,
+    ['HIBC', opts.hibc],
+  ].filter(Boolean);
+  const metaEl = document.createElement('dl');
+  metaEl.className = 'text-xs text-slate-600 grid grid-cols-[auto_1fr] gap-x-2';
+  metaRows.forEach(function(row) {
+    const dt = document.createElement('dt');
+    dt.className = 'font-medium text-slate-500';
+    dt.textContent = row[0];
+    const dd = document.createElement('dd');
+    dd.className = 'font-mono';
+    dd.textContent = row[1];
+    metaEl.appendChild(dt);
+    metaEl.appendChild(dd);
+  });
+  card.appendChild(metaEl);
+
+  // Canvas
+  const canvasId = 'hibc-' + opts.hibc.replace(/[^a-z0-9]/gi, '') + '-' + containerId;
+  const canvas = document.createElement('canvas');
+  canvas.id = canvasId;
+  canvas.className = 'mx-auto block border border-slate-100 rounded my-3';
+  card.appendChild(canvas);
+
+  // Raw string
+  const raw = document.createElement('p');
+  raw.className = 'text-xs font-mono text-slate-400 break-all';
+  raw.textContent = opts.hibc;
+  card.appendChild(raw);
+
+  if (opts.note) {
+    const note = document.createElement('p');
+    note.className = 'text-xs text-slate-500 italic';
+    note.textContent = opts.note;
+    card.appendChild(note);
+  }
+
+  container.appendChild(card);
+
+  // Render as plain Code 128 with the literal HIBC string.
+  // bcid 'code128' (NOT 'hibccode128') so bwip-js does NOT recompute the
+  // trailing check character — the literal string already contains it.
+  try {
+    bwipjs.toCanvas(canvasId, {
+      bcid: 'code128',
+      text: opts.hibc,
+      scale: 2,
+      height: 20,
+      includetext: true,
+      textxalign: 'center',
+      textsize: 10,
+    });
+  } catch (e) {
+    canvas.style.display = 'none';
+    const err = document.createElement('p');
+    err.className = 'text-xs text-red-500';
+    err.textContent = 'Barcode error: ' + e.message;
+    card.appendChild(err);
+  }
+}
+
+// Render a GS1-128 linear barcode card (used for ES2 GTIN path)
+function makeGs1128Card(containerId, opts) {
+  // opts: { label, payload (parenthesised AI string), gtin, note }
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const card = document.createElement('div');
+  card.className = 'bg-white rounded-lg border border-slate-200 p-6 flex flex-col gap-2';
+
+  const headerRow = document.createElement('div');
+  headerRow.className = 'flex items-start justify-between gap-2';
+  const labelEl = document.createElement('div');
+  labelEl.className = 'text-sm font-semibold text-slate-800';
+  labelEl.textContent = opts.label;
+  const badge = document.createElement('span');
+  badge.className = 'shrink-0 text-xs font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700';
+  badge.textContent = 'GS1-128';
+  headerRow.appendChild(labelEl);
+  headerRow.appendChild(badge);
+  card.appendChild(headerRow);
+
+  if (opts.gtin) {
+    const metaEl = document.createElement('dl');
+    metaEl.className = 'text-xs text-slate-600 grid grid-cols-[auto_1fr] gap-x-2';
+    [['GTIN', opts.gtin]].concat(opts.meta || []).forEach(function(row) {
+      const dt = document.createElement('dt');
+      dt.className = 'font-medium text-slate-500';
+      dt.textContent = row[0];
+      const dd = document.createElement('dd');
+      dd.className = 'font-mono';
+      dd.textContent = row[1];
+      metaEl.appendChild(dt);
+      metaEl.appendChild(dd);
+    });
+    card.appendChild(metaEl);
+  }
+
+  const canvasId = 'gs1-' + (opts.gtin || '').replace(/[^0-9]/g, '') + '-' + containerId + '-' + Math.random().toString(36).slice(2,6);
+  const canvas = document.createElement('canvas');
+  canvas.id = canvasId;
+  canvas.className = 'mx-auto block border border-slate-100 rounded my-3';
+  card.appendChild(canvas);
+
+  const raw = document.createElement('p');
+  raw.className = 'text-xs font-mono text-slate-400 break-all';
+  raw.textContent = opts.payload;
+  card.appendChild(raw);
+
+  if (opts.note) {
+    const note = document.createElement('p');
+    note.className = 'text-xs text-slate-500 italic';
+    note.textContent = opts.note;
+    card.appendChild(note);
+  }
+
+  container.appendChild(card);
+
+  try {
+    bwipjs.toCanvas(canvasId, {
+      bcid: 'gs1-128',
+      text: opts.payload,
+      scale: 2,
+      height: 20,
+      includetext: true,
+      textxalign: 'center',
+      textsize: 10,
+      parsefnc: true,
+    });
+  } catch (e) {
+    canvas.style.display = 'none';
+    const err = document.createElement('p');
+    err.className = 'text-xs text-red-500';
+    err.textContent = 'Barcode error: ' + e.message;
+    card.appendChild(err);
+  }
+}
+
+// ── Data ─────────────────────────────────────────────────────────────────────
+
+// Solera (Medtronic) — GS1 DataMatrix with lot + expiry
+[
+  { label: 'Solera Polyaxial 4.5×45', gtin: '00643169745087', lot: 'LOT-8P4VUN', expiry: '270630' },
+  { label: 'Solera Polyaxial 8.5×60', gtin: '00643169768529', lot: 'LOT-XPQ9VJ', expiry: '270630' },
+  { label: 'Solera 7.5×35',           gtin: '00643169783898', lot: 'LOT-OYY4T9', expiry: '270630' },
+].forEach(function(d) { makeGtinCard('solera-gtins', d); });
+
+// ModuLeX (Medtronic) — modular trio
+[
+  { label: 'ModuLeX Shank 7.5×40',  gtin: '00763000435400', lot: 'SHK1A', expiry: '280630' },
+  { label: 'ModuLeX MAS Head',       gtin: '20763000608105', lot: 'HD442',  expiry: '271215' },
+  { label: 'ModuLeX Set Screw',      gtin: '00763000435769', lot: 'SS998',  expiry: '290301' },
+].forEach(function(d) { makeGtinCard('modulex-trio', d); });
+
+// Xia 3 (Stryker) — GS1 DataMatrix
+[
+  { label: 'Xia 3 Polyaxial 7.5×35', gtin: '07613252046097', lot: 'LOT-SS1Y1A', expiry: '270630' },
+  { label: 'Xia 3 Polyaxial 6.5×90', gtin: '07613327352634', lot: 'LOT-XCK1WD', expiry: '270630' },
+  { label: 'Xia 3 Monoaxial 9.5×60', gtin: '07613252019367', lot: 'LOT-41G05W', expiry: '270630' },
+  { label: 'Xia 3 Polyaxial 6.5×45', gtin: '04546540562241', lot: 'XIA-A001',   expiry: '280415' },
+].forEach(function(d) { makeGtinCard('xia3-gtins', d); });
+
+// Xia 3 HIBC — two-part primary + secondary pairs
+[
+  {
+    label: 'Xia 3 Max Rad Rod Ø6.0×50 — Primary',
+    hibc: '+H85348239050S04', kind: 'primary',
+    ref: '48239050S', lot: 'VJ7', expiry: '2027-07',
+  },
+  {
+    label: 'Xia 3 Max Rad Rod Ø6.0×50 — Secondary',
+    hibc: '+$$3270731V074V', kind: 'secondary',
+    ref: '48239050S', lot: 'VJ7', expiry: '2027-07-31',
+    note: 'Scan within 5 s of the primary above.',
+  },
+  {
+    label: 'Xia 3 Polyaxial Screw Ø6.5×45 — Primary',
+    hibc: '+H853482316545S0B', kind: 'primary',
+    ref: '482316545S', lot: 'C26025', expiry: '2027-10',
+  },
+  {
+    label: 'Xia 3 Polyaxial Screw Ø6.5×45 — Secondary',
+    hibc: '+$$3271031C260258Z', kind: 'secondary',
+    ref: '482316545S', lot: 'C26025', expiry: '2027-10-31',
+    note: 'Scan within 5 s of the primary above.',
+  },
+  {
+    label: 'Xia 3 Blocker — Primary',
+    hibc: '+H85348230000S0X', kind: 'primary',
+    ref: '48230000S', lot: 'JTL', expiry: '2029-05',
+  },
+  {
+    label: 'Xia 3 Blocker — Secondary',
+    hibc: '+$$3290531JTLXT', kind: 'secondary',
+    ref: '48230000S', lot: 'JTL', expiry: '2029-05-31',
+    note: 'Scan within 5 s of the primary above.',
+  },
+].forEach(function(d) { makeHibcCard('xia3-hibc', d); });
+
+// ES2 (Stryker) — three paths to same implant
+makeHibcCard('es2-paths', {
+  label: 'ES2 Polyaxial Ø8.5×50 — HIBC primary',
+  hibc: '+H853484901850S0C', kind: 'primary',
+  ref: '4849-01850-S',
+  note: 'Labeler H853 = Stryker. Resolves: ES2, 8.5×50, polyaxial, cannulated.',
+});
+makeGs1128Card('es2-paths', {
+  label: 'ES2 Polyaxial Ø8.5×50 — EU sterile GTIN',
+  payload: '(01)07613327394184',
+  gtin: '07613327394184',
+  meta: [['Market', 'EU sterile']],
+  note: 'Resolves same record as HIBC above.',
+});
+makeGs1128Card('es2-paths', {
+  label: 'ES2 Polyaxial Ø8.5×50 — US non-sterile GTIN',
+  payload: '(01)07613327002478',
+  gtin: '07613327002478',
+  meta: [['Market', 'US non-sterile'], ['Blade', 'long']],
+  note: 'Same implant + bladeLength = long.',
+});
+
+// MESA 2 (K2M → Stryker) — GS1 DataMatrix
+[
+  { label: 'MESA 2 Deformity 360° 4.5×75',     gtin: '10888857231658', lot: 'LOT-C8SUEM', expiry: '270630' },
+  { label: 'MESA 2 Deformity Polyaxial 6.5×100', gtin: '10888857046863', lot: 'LOT-NFPZ79', expiry: '270630' },
+  { label: 'MESA 2 Cortical Polyaxial 5.5×75',  gtin: '10888857233546', lot: 'LOT-2LS4F9', expiry: '270630' },
+].forEach(function(d) { makeGtinCard('mesa2-gtins', d); });
+
+// CREO (Globus Medical) — GS1 DataMatrix
+[
+  { label: 'CREO Uniplanar 6.5×20', gtin: '00889095095005', lot: 'LOT-KZRXSQ', expiry: '270630' },
+  { label: 'CREO Uniplanar 8.5×95', gtin: '00889095119084', lot: 'LOT-8A3DRL', expiry: '270630' },
+  { label: 'CREO AMP 4.0×50',       gtin: '00889095015041', lot: 'LOT-YLA4OV', expiry: '270630' },
+].forEach(function(d) { makeGtinCard('creo-gtins', d); });
+
+// DePuy Synthes — GS1 DataMatrix
+[
+  { label: 'EXPEDIUM Rod 5.5×120 mm',    gtin: '10705034566450', lot: 'LOT-EXP001', expiry: '270630' },
+  { label: 'VIPER 2 Rod 5.5×120 mm',     gtin: '10705034182537', lot: 'LOT-VP2001', expiry: '270630' },
+  { label: 'TriALTIS Screw 6.5×35',      gtin: '10705034643816', lot: 'LOT-TRI001', expiry: '270630' },
+  { label: 'MATRIX Screw 6.0 mm',        gtin: '10705034747965', lot: 'LOT-MTX001', expiry: '270630' },
+  { label: 'Mountaineer Rod 4.75×600 mm', gtin: '10705034290324', lot: 'LOT-MTN001', expiry: '270630' },
+].forEach(function(d) { makeGtinCard('depuy-gtins', d); });
+
+// Not-found test
+makeGtinCard('not-found', {
+  label: 'Fake device — not found',
+  gtin: '99999999999999',
+  lot: '0000',
+  expiry: '270630',
+  note: 'Expected result: "not found" message in the scan modal. No catalogue record.',
+});
+</script>
+</body>
+</html>

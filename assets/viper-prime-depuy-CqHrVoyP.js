@@ -1,1 +1,0 @@
-var e={"10705034507668":{s:`VIPER PRIME`,t:`rod`,c:`286750050`,n:`DePuy Synthes`},"10705034605739":{s:`VIPER PRIME`,t:`screw`,c:`697100117`,n:`DePuy Synthes`}};export{e as default};
