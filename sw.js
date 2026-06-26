@@ -11,7 +11,7 @@
 //     revalidate: instant from cache, refreshed in the background.
 // Cache name includes the app version so old caches are cleaned up on deploy.
 
-const CACHE_NAME = 'skeletal-plan-v3.46.02-beta';
+const CACHE_NAME = 'skeletal-plan-v3.48.00-beta';
 // Derive the base from the service worker's own URL so precache paths are correct
 // under any deploy base — production '/spine/' and preview '/spine-test/' alike.
 // (sw.js is served at <base>sw.js, so stripping the filename yields <base>.)
@@ -76,24 +76,33 @@ self.addEventListener('fetch', (event) => {
     }
 
     // Navigations (the HTML document) → network-first so a deploy lands on the
-    // first reload. Fall back to the cached document, then the app shell, when
-    // offline. The app is a client-routed SPA (?data=, ?tab=, ?demo=), so the
-    // shell is a valid response for any in-scope navigation.
+    // first reload. Fall back to the cached app shell when offline. The app is a
+    // client-routed SPA (?data=, ?tab=, ?demo=), so the shell is a valid response
+    // for any in-scope navigation.
     if (request.mode === 'navigate') {
+        // Share links carry the full clinical case payload in the URL (?data=…).
+        // Caching such a navigation would persist the patient data as a Cache
+        // Storage key — clinical data-at-rest outside the app's AES encryption and
+        // its 24h auto-clear, plus unbounded per-link cache growth on shared
+        // hospital machines. So: never write a data-bearing navigation to the
+        // cache, and normalise every cached navigation to the bare shell URL
+        // (key = BASE_PATH, query stripped) so query variants share one entry and
+        // no payload is ever recorded as a key.
+        const navUrl = new URL(request.url);
+        const hasPatientData = navUrl.searchParams.has('data');
         event.respondWith(
             fetch(request)
                 .then((networkResponse) => {
-                    if (networkResponse.ok) {
+                    if (networkResponse.ok && !hasPatientData) {
                         const copy = networkResponse.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+                        // Key on the query-less shell URL, not the navigated request.
+                        caches.open(CACHE_NAME).then((cache) => cache.put(BASE_PATH, copy));
                     }
                     return networkResponse;
                 })
                 .catch(async () => {
                     const cache = await caches.open(CACHE_NAME);
                     return (
-                        (await cache.match(request)) ||
-                        (await cache.match(request, { ignoreSearch: true })) ||
                         (await cache.match(BASE_PATH)) ||
                         (await cache.match(BASE_PATH + 'index.html')) ||
                         Response.error()
