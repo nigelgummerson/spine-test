@@ -125,7 +125,7 @@
           </tr>
           <tr>
             <td class="px-3 py-2 text-orange-800"></td>
-            <td class="px-3 py-2">Xia 3</td>
+            <td class="px-3 py-2">Serrato</td>
             <td class="px-3 py-2 font-mono">6.5×90</td>
             <td class="px-3 py-2 font-mono text-xs">07613327352634</td>
             <td class="px-3 py-2">Polyaxial</td>
@@ -309,6 +309,16 @@
     </div>
     <h3 class="text-base font-semibold text-slate-700 mb-3">EXPEDIUM / VIPER 2 / TriALTIS / MATRIX / Mountaineer — GS1 DataMatrix</h3>
     <div id="depuy-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+  </section>
+
+  <!-- Photographed packaging — real codes transcribed from physical pouches/boxes -->
+  <section class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+      <h2 class="text-xl font-bold text-slate-900">Photographed packaging (2026-06-26)</h2>
+    </div>
+    <p class="text-sm text-slate-600 mb-3">Real GTIN / lot / expiry transcribed from physical packaging. Solis and the Xia 3 rod are Stryker; TriALTIS and the EIT LLIF cage are DePuy Synthes (the EIT cage's EU pouch GTIN is not in GUDID, so it was added from this packaging).</p>
+    <div id="photo-scans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
   </section>
 
   <!-- Not-found test section -->
@@ -609,7 +619,7 @@ function makeGs1128Card(containerId, opts) {
 // Xia 3 (Stryker) — GS1 DataMatrix
 [
   { label: 'Xia 3 Polyaxial 7.5×35', gtin: '07613252046097', lot: 'LOT-SS1Y1A', expiry: '270630' },
-  { label: 'Xia 3 Polyaxial 6.5×90', gtin: '07613327352634', lot: 'LOT-XCK1WD', expiry: '270630' },
+  { label: 'Serrato Polyaxial 6.5×90', gtin: '07613327352634', lot: 'LOT-XCK1WD', expiry: '270630' },
   { label: 'Xia 3 Monoaxial 9.5×60', gtin: '07613252019367', lot: 'LOT-41G05W', expiry: '270630' },
   { label: 'Xia 3 Polyaxial 6.5×45', gtin: '04546540562241', lot: 'XIA-A001',   expiry: '280415' },
 ].forEach(function(d) { makeGtinCard('xia3-gtins', d); });
@@ -695,6 +705,15 @@ makeGs1128Card('es2-paths', {
   { label: 'MATRIX Screw 6.0 mm',        gtin: '10705034747965', lot: 'LOT-MTX001', expiry: '270630' },
   { label: 'Mountaineer Rod 4.75×600 mm', gtin: '10705034290324', lot: 'LOT-MTN001', expiry: '270630' },
 ].forEach(function(d) { makeGtinCard('depuy-gtins', d); });
+
+// Photographed packaging (2026-06-26) — real codes from physical pouches/boxes.
+// Xia 3 rod pouch carried no AI(17) expiry (production date only), so expiry is omitted.
+[
+  { label: 'Solis cervical spacer 14×4° (REF 6742044S)', gtin: '07613327484342', lot: '92330',  expiry: '280617' },
+  { label: 'Xia 3 Ti rod Ø6.0×50',                       gtin: '04546540560933', lot: 'R2U' },
+  { label: 'TriALTIS pre-lordosed rod 5.5×85 (REF 5560553085TS)', gtin: '10705034591407', lot: 'CSAEUD', expiry: '350630' },
+  { label: 'EIT LLIF cage H16/16°/50×22 (REF LHI71650)', gtin: '04260567833490', lot: 'E20CL0743', expiry: '251031' },
+].forEach(function(d) { makeGtinCard('photo-scans', d); });
 
 // Not-found test
 makeGtinCard('not-found', {
