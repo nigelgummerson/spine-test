@@ -11,7 +11,7 @@
 //     revalidate: instant from cache, refreshed in the background.
 // Cache name includes the app version so old caches are cleaned up on deploy.
 
-const CACHE_NAME = 'skeletal-plan-v3.49.00-beta';
+const CACHE_NAME = 'skeletal-plan-v3.50.00-beta';
 // Derive the base from the service worker's own URL so precache paths are correct
 // under any deploy base — production '/spine/' and preview '/spine-test/' alike.
 // (sw.js is served at <base>sw.js, so stripping the filename yields <base>.)
