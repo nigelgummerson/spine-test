@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex,nofollow" />
+<title>zxing-cpp iOS probe</title>
+<style>
+  body { font: 14px/1.4 -apple-system, system-ui, sans-serif; margin: 0; padding: 8px; background:#111; color:#eee; }
+  #log { white-space: pre-wrap; word-break: break-word; }
+  .ok { color:#6f6; } .err { color:#f66; } .hit { color:#6cf; }
+  video { width: 100%; max-height: 40vh; background:#000; object-fit: contain; }
+  h1 { font-size: 15px; margin: 4px 0; }
+</style>
+</head>
+<body>
+<h1>zxing-cpp probe (isolated, esm.sh@3.1.0)</h1>
+<video id="v" playsinline muted></video>
+<div id="log"></div>
+<script type="module">
+const logEl = document.getElementById('log');
+function log(msg, cls) {
+  const t = new Date().toISOString().slice(11, 23);
+  const line = document.createElement('div');
+  if (cls) line.className = cls;
+  line.textContent = `[${t}] ${msg}`;
+  logEl.appendChild(line);
+  // keep last ~60 lines
+  while (logEl.childElementCount > 60) logEl.removeChild(logEl.firstChild);
+}
+window.onerror = (m, s, l, c, e) => log('window.onerror: ' + m + ' @' + l + ':' + c + (e ? ' ' + e.stack : ''), 'err');
+window.onunhandledrejection = (ev) => log('unhandledrejection: ' + (ev.reason && (ev.reason.stack || ev.reason.message || ev.reason)), 'err');
+
+log('UA: ' + navigator.userAgent);
+log('secureContext=' + window.isSecureContext + '  WebAssembly=' + (typeof WebAssembly));
+
+const OPTS = {
+  formats: ['DataMatrix', 'QRCode', 'Code128'],
+  textMode: 'Plain',
+  tryHarder: true,
+  tryRotate: true,
+  tryInvert: true,
+  maxNumberOfSymbols: 5,
+};
+
+let readBarcodes, prepareZXingModule;
+try {
+  log('importing zxing-wasm/reader from esm.sh …');
+  const mod = await import('https://esm.sh/zxing-wasm@3.1.0/reader');
+  readBarcodes = mod.readBarcodes;
+  prepareZXingModule = mod.prepareZXingModule;
+  log('module imported OK. ZXING_WASM_VERSION=' + (mod.ZXING_WASM_VERSION || '?'), 'ok');
+} catch (e) {
+  log('IMPORT FAILED: ' + (e.stack || e.message || e), 'err');
+}
+
+// Force WASM instantiation up-front with a tiny 1x1 image so we learn whether
+// the module compiles on this device BEFORE any camera work.
+try {
+  log('warming up WASM (decode 1x1 blank)…');
+  const warm = new ImageData(1, 1);
+  const r0 = await readBarcodes(warm, OPTS);
+  log('WASM instantiated + readBarcodes callable. blank results=' + r0.length, 'ok');
+} catch (e) {
+  log('WASM WARMUP FAILED: ' + (e.stack || e.message || e), 'err');
+}
+
+// Camera + decode loop
+const video = document.getElementById('v');
+let stream;
+try {
+  log('requesting camera (environment)…');
+  stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment', width: { ideal: 1920 }, height: { ideal: 1080 } } });
+  video.srcObject = stream;
+  await video.play();
+  log('camera playing ' + video.videoWidth + 'x' + video.videoHeight, 'ok');
+} catch (e) {
+  log('CAMERA FAILED: ' + (e.name || '') + ' ' + (e.message || e), 'err');
+}
+
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d', { willReadFrequently: true });
+let n = 0, inFlight = false;
+async function tick() {
+  if (!inFlight && video.videoWidth > 0) {
+    inFlight = true;
+    try {
+      const vw = video.videoWidth, vh = video.videoHeight;
+      canvas.width = vw; canvas.height = vh;
+      ctx.drawImage(video, 0, 0, vw, vh);
+      const img = ctx.getImageData(0, 0, vw, vh);
+      // quick non-zero pixel sanity (iOS canvas/getImageData can return blank)
+      let nonzero = 0;
+      for (let i = 0; i < img.data.length; i += 4000) if (img.data[i] !== 0) { nonzero = 1; break; }
+      const res = await readBarcodes(img, OPTS);
+      n++;
+      if (n % 8 === 0 || res.length) log(`frame ${n}: results=${res.length} pixels=${nonzero ? 'live' : 'BLANK'}` + (res.length ? ' :: ' + res.map(r => JSON.stringify(r.text) + '(' + r.format + ',' + r.contentType + ',valid=' + r.isValid + ')').join(' | ') : ''), res.length ? 'hit' : undefined);
+    } catch (e) {
+      log('decodeFrame error: ' + (e.stack || e.message || e), 'err');
+    } finally { inFlight = false; }
+  }
+  setTimeout(() => requestAnimationFrame(tick), 150);
+}
+requestAnimationFrame(tick);
+log('decode loop started — point camera at a barcode. Watch the lines below.');
+</script>
+</body>
+</html>
