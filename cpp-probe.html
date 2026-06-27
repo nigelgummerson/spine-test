@@ -43,6 +43,10 @@ const OPTS = {
   maxNumberOfSymbols: 5,
 };
 
+// ?locate=<url> replicates the APP's loading: prepareZXingModule with a custom
+// locateFile pointing at our deployed hashed wasm, instead of the library default.
+const locateUrl = new URLSearchParams(location.search).get('locate');
+
 let readBarcodes, prepareZXingModule;
 try {
   log('importing zxing-wasm/reader from esm.sh …');
@@ -52,6 +56,18 @@ try {
   log('module imported OK. ZXING_WASM_VERSION=' + (mod.ZXING_WASM_VERSION || '?'), 'ok');
 } catch (e) {
   log('IMPORT FAILED: ' + (e.stack || e.message || e), 'err');
+}
+
+if (locateUrl) {
+  try {
+    log('APP-MODE: prepareZXingModule locateFile -> ' + locateUrl);
+    prepareZXingModule({ overrides: { locateFile: (p) => (p.endsWith('.wasm') ? locateUrl : p) } });
+    log('prepareZXingModule set (app-style locateFile)', 'ok');
+  } catch (e) {
+    log('prepareZXingModule FAILED: ' + (e.stack || e.message || e), 'err');
+  }
+} else {
+  log('DEFAULT-MODE: no prepareZXingModule (library default wasm location)');
 }
 
 // Force WASM instantiation up-front with a tiny 1x1 image so we learn whether
