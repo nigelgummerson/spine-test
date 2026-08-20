@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Demo/example page — keep out of the search index so it doesn't dilute the
+       quick-reference SEO surface (it is not in the sitemap). -->
+  <meta name="robots" content="noindex" />
   <title>Skeletal Plan — UDI Scan Test Sheet</title>
   <!-- Tailwind CDN compiles per-page CSS dynamically; SRI is structurally
        incompatible with this service (every response differs). For a static
@@ -17,16 +20,36 @@
   ></script>
   <style>
     body { font-family: 'Inter', sans-serif; }
+    /* Top nav — matches plan.skeletalsurgery.com landing / quick-reference */
+    .site-nav{ position:sticky; top:0; z-index:30; background:rgba(13,27,42,.97);
+      backdrop-filter:saturate(160%) blur(8px); display:flex; align-items:center;
+      justify-content:space-between; gap:14px; padding:12px 22px; }
+    .site-nav .brand{ color:#fff; font-weight:600; font-size:.98rem; letter-spacing:.01em; text-decoration:none; }
+    .site-nav .links{ display:flex; align-items:center; gap:16px; }
+    .site-nav .links a{ color:#cdd8e4; font-weight:500; font-size:.85rem; text-decoration:none; }
+    .site-nav .links a:hover{ color:#fff; }
+    .site-nav .links a.cta{ color:#fff; background:#0f766e; padding:7px 15px; border-radius:7px; font-weight:600; text-decoration:none; }
+    .site-nav .links a.cta:hover{ background:#0c5d56; }
+    @media (max-width:600px){ .site-nav .links a.hide-sm{ display:none; } }
     @media print {
       body { font-size: 9pt; }
       .no-print { display: none !important; }
       .page-break { page-break-before: always; }
       main { max-width: 100% !important; padding: 0 !important; }
     }
-    canvas { image-rendering: pixelated; }
+    canvas { image-rendering: pixelated; max-width: 100%; height: auto; }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
+
+<nav class="site-nav no-print">
+  <a class="brand" href="https://plan.skeletalsurgery.com/">Skeletal Plan</a>
+  <span class="links">
+    <a class="hide-sm" href="https://plan.skeletalsurgery.com/">Home</a>
+    <a href="https://plan.skeletalsurgery.com/spine/quick-reference.html">Quick reference</a>
+    <a class="cta" href="https://plan.skeletalsurgery.com/spine/">Open Skeletal Plan</a>
+  </span>
+</nav>
 
 <main class="max-w-5xl mx-auto px-4 py-8">
 

@@ -4,22 +4,84 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="index, nofollow" />
+<meta name="theme-color" content="#0d1b2a" />
 <title>Privacy Policy — Skeletal Plan</title>
+<link rel="icon" href="favicon.svg" />
 <style>
-  body { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; font: 16px/1.6 -apple-system, system-ui, "Segoe UI", sans-serif; color: #1c2530; background: #fff; }
-  h1 { font-size: 26px; margin: 0 0 4px; }
-  h2 { font-size: 19px; margin: 34px 0 8px; }
-  .meta { color: #5b6776; font-size: 14px; margin-bottom: 8px; }
-  .lead { background: #eef4fb; border: 1px solid #d4e3f3; border-radius: 10px; padding: 14px 16px; margin: 18px 0; }
-  ul { padding-left: 22px; }
-  code { background: #f1f3f5; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
-  footer { margin-top: 48px; color: #5b6776; font-size: 13px; border-top: 1px solid #e5e9ee; padding-top: 16px; }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --navy:#0d1b2a; --ink:#16222f; --body:#3c4a59; --muted:#6b7888;
+    --line:#e3e8ee; --bg:#fff; --soft:#f5f7fa;
+    --accent:#0f766e; --accent-d:#0c5d56; --accent-soft:#e6f3f1;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:var(--sans); color:var(--body); line-height:1.62; background:var(--bg); -webkit-font-smoothing:antialiased; }
+  a{ color:var(--accent); }
+  a:hover{ color:var(--accent-d); }
+  strong{ color:var(--ink); }
+  em{ color:var(--ink); font-style:italic; }
+
+  /* Nav — mirrors the landing page */
+  .nav{ position:sticky; top:0; z-index:20; background:rgba(13,27,42,.97); backdrop-filter:saturate(160%) blur(8px);
+        display:flex; align-items:center; justify-content:space-between; padding:12px 22px; }
+  .nav .brand{ display:flex; align-items:center; gap:10px; color:#fff; font-weight:600; font-size:.98rem; letter-spacing:.01em; text-decoration:none; }
+  .nav .brand img{ width:26px; height:26px; border-radius:7px; }
+  .nav .links{ display:flex; align-items:center; gap:18px; }
+  .nav .links a{ color:#aeb9c7; text-decoration:none; font-size:.85rem; }
+  .nav .links a:hover{ color:#fff; }
+  .nav .links a.cta{ color:#fff; background:var(--accent); padding:7px 15px; border-radius:7px; font-weight:600; }
+  .nav .links a.cta:hover{ background:var(--accent-d); }
+  @media (max-width:560px){ .nav .links a.hide-sm{ display:none; } }
+
+  /* Header — navy gradient hero, like the landing */
+  .phead{ background:linear-gradient(160deg,#0d1b2a 0%,#102338 60%,#0c2230 100%); color:#e8edf3; }
+  .phead .wrap{ padding:54px 24px 48px; }
+  .eyebrow{ text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; font-weight:700; color:#5fb6ac; margin-bottom:14px; }
+  .phead h1{ color:#fff; font-weight:700; letter-spacing:-.022em; line-height:1.1; font-size:2.2rem; }
+  .phead .meta{ margin-top:12px; color:#9fb0c2; font-size:.9rem; }
+
+  /* Document body */
+  .wrap{ max-width:820px; margin:0 auto; }
+  main.doc{ padding:8px 24px 16px; }
+  h2{ color:var(--ink); font-weight:700; letter-spacing:-.018em; line-height:1.2; font-size:1.16rem;
+      margin:36px 0 10px; padding-left:14px; border-left:3px solid var(--accent); }
+  p{ margin-bottom:13px; max-width:68ch; }
+  ul{ list-style:none; margin:4px 0 13px; max-width:68ch; }
+  ul li{ position:relative; padding-left:20px; margin-bottom:9px; }
+  ul li::before{ content:""; position:absolute; left:3px; top:.62em; width:6px; height:6px; border-radius:50%; background:var(--accent); }
+  code{ background:var(--soft); border:1px solid var(--line); padding:1px 6px; border-radius:5px; font-size:.88em; }
+
+  /* "In short" lead — landing's blue callout, scaled up */
+  .lead{ background:#eef6fb; border:1px solid #cfe4f1; border-radius:12px; padding:18px 20px; margin:28px 0 8px;
+         color:#2a5067; font-size:1rem; line-height:1.6; }
+  .lead strong{ color:#1d3c50; }
+
+  footer.foot{ border-top:1px solid var(--line); margin-top:40px; padding:26px 0 60px; color:var(--muted); font-size:.82rem; line-height:1.55; }
+  footer.foot a{ color:var(--muted); }
+
+  @media (max-width:560px){ .phead h1{ font-size:1.8rem; } .phead .wrap{ padding:40px 22px 36px; } }
 </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Skeletal Plan — Spinal Instrumentation Plan &amp; Record · Effective 21 June 2026</p>
 
+<nav class="nav">
+  <a class="brand" href="/"><img src="favicon.svg" alt="">Skeletal Plan</a>
+  <div class="links">
+    <a class="hide-sm" href="/">&larr; Back to site</a>
+    <a class="cta" href="/spine/">Open app</a>
+  </div>
+</nav>
+
+<header class="phead">
+  <div class="wrap">
+    <p class="eyebrow">Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Skeletal Plan — Spinal Instrumentation Plan &amp; Record · Effective 28 June 2026</p>
+  </div>
+</header>
+
+<main class="wrap doc">
   <div class="lead">
     <strong>In short:</strong> Skeletal Plan does not collect, transmit, or store any of your information on our servers. It has no servers. Everything you enter — including any patient information — stays on the device you are using and is never sent to us or to anyone else.
   </div>
@@ -28,7 +90,7 @@
   <p>Skeletal Plan is published by <strong>N2 Medical Ltd</strong> ("we", "us"), a company registered in England and Wales. Questions about this policy: <a href="mailto:skeletalsurgery@icloud.com">skeletalsurgery@icloud.com</a>.</p>
 
   <h2>2. What the app is</h2>
-  <p>Skeletal Plan is a pre-operative surgical <em>planning and documentation aid</em> for spinal surgeons. It runs entirely on your device (web browser, installed web app, or native app). It is offline-first: all program code and resources are bundled locally and it makes <strong>no network calls</strong> in normal use.</p>
+  <p>Skeletal Plan is a pre-operative surgical <em>planning and documentation aid</em> for spinal surgeons. It runs entirely on your device (web browser, installed web app, or native app). It is offline-first: all program code and resources are bundled locally and it works without a network connection. There is a single, optional exception in the installed phone apps — an implant-catalogue lookup that never involves any patient or personal data (see section 6).</p>
 
   <h2>3. Information we collect</h2>
   <p><strong>We collect none.</strong> The app contains no analytics, no tracking, no advertising, no user accounts, and no telemetry. We do not operate a back-end service that receives your data. We cannot see what you do in the app.</p>
@@ -46,26 +108,31 @@
   <h2>5. Camera</h2>
   <p>On supported devices the app can use the camera to scan implant barcodes (UDI/GTIN). Camera frames are processed <strong>on the device only</strong> to read the code; no image or video is stored or transmitted. Camera access requires your explicit permission and can be revoked in your device settings.</p>
 
-  <h2>6. Sharing your information</h2>
+  <h2>6. Implant catalogue lookups (installed apps only)</h2>
+  <p>When you scan an implant barcode that is not in the catalogue bundled with the app, the installed phone apps may look the code up against the public US FDA openFDA device registry (api.fda.gov) to identify the implant. Only the implant's barcode / reference number is sent — a product identifier, not patient or personal data. <strong>No patient information is ever transmitted.</strong> This lookup happens only in the installed phone apps, only when you scan, and only when the implant is not already known to the app. The web and standalone versions make no such call.</p>
+
+  <h2>7. Sharing your information</h2>
   <p>We do not share your information, because we do not have it. Any sharing of a plan or record (for example exporting a PDF, or transferring a case by file or QR code) is an action <strong>you</strong> initiate and control; the data goes only where you send it.</p>
 
-  <h2>7. Hosting</h2>
+  <h2>8. Hosting</h2>
   <p>The web version is served as static files from a content host (GitHub Pages). Like any website, the host may log standard technical request data (such as IP address) to deliver the page; this is governed by the host's own policy and contains none of your clinical data. The installed and native apps load their resources locally and do not contact this host in normal use.</p>
 
-  <h2>8. Children</h2>
+  <h2>9. Children</h2>
   <p>The app is a professional tool intended for clinicians and is not directed at children.</p>
 
-  <h2>9. Your rights</h2>
+  <h2>10. Your rights</h2>
   <p>As we hold no personal data about you, there is nothing for us to access, correct, or erase. For any patient data held within the app, the responsible data controller is the clinician or healthcare organisation that entered it; requests relating to that data should be directed to them.</p>
 
-  <h2>10. Changes</h2>
+  <h2>11. Changes</h2>
   <p>We may update this policy. The effective date above will change accordingly; material changes will be noted on this page.</p>
 
-  <h2>11. Contact &amp; supervisory authority</h2>
+  <h2>12. Contact &amp; supervisory authority</h2>
   <p>Contact: <a href="mailto:skeletalsurgery@icloud.com">skeletalsurgery@icloud.com</a>. If you are in the UK and have concerns about data handling, you may contact the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk">ico.org.uk</a>.</p>
 
-  <footer>
+  <footer class="foot">
     Skeletal Plan is a documentation and planning aid. It is not a medical device and makes no clinical claims. © 2026 N2 Medical Ltd.
   </footer>
+</main>
+
 </body>
 </html>
