@@ -303,7 +303,7 @@
     <div id="xia3-gtins" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
 
     <h3 class="text-base font-semibold text-slate-700 mb-2">Xia 3 — HIBC two-part (primary + secondary)</h3>
-    <p class="text-sm text-slate-500 mb-3">Scan the <strong>primary</strong> first (product identity), then the <strong>secondary</strong> (lot + expiry) within 5 seconds. The app merges them into one UdiRecord.</p>
+    <p class="text-sm text-slate-500 mb-3">Scan both codes of a pair &mdash; <strong>either order</strong>. The primary carries product identity, the secondary carries lot + expiry, and HIBC links them by check character, so the app pairs them into one UdiRecord whichever arrives first. Allow about 15 seconds between the two.</p>
     <div id="xia3-hibc" class="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-6"></div>
 
     <h3 class="text-base font-semibold text-slate-700 mb-2">ES2 — three-path test (all resolve to the same implant)</h3>
@@ -658,7 +658,7 @@ function makeGs1128Card(containerId, opts) {
     label: 'Xia 3 Max Rad Rod Ø6.0×50 — Secondary',
     hibc: '+$$3270731V074V', kind: 'secondary',
     ref: '48239050S', lot: 'VJ7', expiry: '2027-07-31',
-    note: 'Scan within 5 s of the primary above.',
+    note: 'Pairs with the primary above &mdash; either order, within ~15 s.',
   },
   {
     label: 'Xia 3 Polyaxial Screw Ø6.5×45 — Primary',
@@ -669,7 +669,7 @@ function makeGs1128Card(containerId, opts) {
     label: 'Xia 3 Polyaxial Screw Ø6.5×45 — Secondary',
     hibc: '+$$3271031C260258Z', kind: 'secondary',
     ref: '482316545S', lot: 'C26025', expiry: '2027-10-31',
-    note: 'Scan within 5 s of the primary above.',
+    note: 'Pairs with the primary above &mdash; either order, within ~15 s.',
   },
   {
     label: 'Xia 3 Blocker — Primary',
@@ -680,7 +680,7 @@ function makeGs1128Card(containerId, opts) {
     label: 'Xia 3 Blocker — Secondary',
     hibc: '+$$3290531JTLXT', kind: 'secondary',
     ref: '48230000S', lot: 'JTL', expiry: '2029-05-31',
-    note: 'Scan within 5 s of the primary above.',
+    note: 'Pairs with the primary above &mdash; either order, within ~15 s.',
   },
 ].forEach(function(d) { makeHibcCard('xia3-hibc', d); });
 
