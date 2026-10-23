@@ -25,7 +25,7 @@
         "location": ""
     },
     "implantSystem": {
-        "manufacturer": "Stryker",
+        "manufacturer": "VB Spine",
         "system": "MESA 2"
     },
     "plan": {
@@ -343,7 +343,7 @@
     },
     "caseScans": [],
     "ui": {
-        "colourScheme": "gold",
+        "colourScheme": "purple",
         "viewMode": "thoracolumbar",
         "notePositions": {
             "1777453492621": {
