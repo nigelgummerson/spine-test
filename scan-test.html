@@ -400,6 +400,7 @@ function formatExpiry(yymmdd) {
 }
 
 // Render a GS1 DataMatrix card into a container element
+let dmCardCount = 0;
 function makeGtinCard(containerId, opts) {
   // opts: { label, gtin, lot, expiry, note }
   const container = document.getElementById(containerId);
@@ -435,7 +436,8 @@ function makeGtinCard(containerId, opts) {
   card.appendChild(metaEl);
 
   // Canvas
-  const canvasId = 'dm-' + opts.gtin + '-' + containerId;
+  // Counter: several pouches can share a GTIN (same screw, different lots).
+  const canvasId = 'dm-' + opts.gtin + '-' + containerId + '-' + (++dmCardCount);
   const canvas = document.createElement('canvas');
   canvas.id = canvasId;
   canvas.className = 'mx-auto block border border-slate-100 rounded my-3';
