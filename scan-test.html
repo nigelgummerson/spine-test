@@ -287,6 +287,16 @@
       <li>Each screw shows as a plate screw with "Add to Plate C6&ndash;C7", not a pedicle position; all four list under the plate in the inventory.</li>
     </ol>
     <div id="acdf-ozark-scans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-2">Two-level Ozark plate: span and screw limit</h3>
+    <p class="text-sm text-slate-600 mb-3">A 2-level 36 mm plate and seven screws, for a new case. Lots and expiry dates are made up; the GTINs are real catalogue entries.</p>
+    <ol class="list-decimal ms-5 text-sm text-slate-600 mb-4 space-y-1">
+      <li>Plate &rarr; Place new, pick C4: the other level jumps to C6 and the dialog says "Levels on this plate: 2". The level lists offer only 2-level spans.</li>
+      <li>Add screws 1 to 6 to the plate from the pool. After the sixth, "Add to plate" no longer offers it.</li>
+      <li>Screw 7 has nowhere to go: it stays unallocated.</li>
+      <li>Reopen the plate and change the span to C4&ndash;C5: Update is blocked (wrong span for the scanned plate).</li>
+    </ol>
+    <div id="acdf-ozark-2level-scans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
   </section>
 
   <!-- Medtronic section -->
@@ -765,6 +775,13 @@ makeGs1128Card('es2-paths', {
   { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw 3', gtin: '10888857408319', lot: 'VWAY-524503', expiry: '280101' },
   { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw 4', gtin: '10888857408319', lot: 'PVFC-499882', expiry: '270424' },
 ].forEach(function(d) { makeGtinCard('acdf-ozark-scans', d); });
+
+// Two-level Ozark plate (2026-11-04): span lock and the 6-screw limit. Lots are invented.
+[{ label: 'Ozark plate, 2 level, 36 mm (REF AA01-42F36V-G1)', gtin: '10888857416390', lot: 'TEST-2LV-01', expiry: '310312' }]
+  .concat([1, 2, 3, 4, 5, 6, 7].map(function(n) {
+    return { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw ' + n, gtin: '10888857408319', lot: 'TEST-SCR-0' + n, expiry: '290101' };
+  }))
+  .forEach(function(d) { makeGtinCard('acdf-ozark-2level-scans', d); });
 
 // Not-found test
 makeGtinCard('not-found', {
