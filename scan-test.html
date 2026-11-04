@@ -273,6 +273,22 @@
     </div>
   </section>
 
+  <!-- ACDF case: Ozark plate + 4 plate screws + Tritanium C cage -->
+  <section id="acdf-ozark" class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <div class="w-3 h-3 rounded-full bg-teal-600"></div>
+      <h2 class="text-xl font-bold text-slate-900">ACDF test case: Ozark plate, 4 plate screws, Tritanium C cage (2026-11-04)</h2>
+    </div>
+    <p class="text-sm text-slate-600 mb-3">The six pouches from the C6/7 ACDF test, with their real GTIN, lot and expiry. Scan all six into the case scan pool, then:</p>
+    <ol class="list-decimal ms-5 text-sm text-slate-600 mb-4 space-y-1">
+      <li>Implant Supplier fills in (VB Spine, purple) from the plate, with no pedicle screw scanned.</li>
+      <li>Plate &rarr; Place new: plate length shows 24 mm.</li>
+      <li>Cage &rarr; Place new at C6/7: 14 &times; 12 &times; 5 mm fills in.</li>
+      <li>Each screw shows as a plate screw with "Add to Plate C6&ndash;C7", not a pedicle position; all four list under the plate in the inventory.</li>
+    </ol>
+    <div id="acdf-ozark-scans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+  </section>
+
   <!-- Medtronic section -->
   <section class="mb-10">
     <div class="flex items-center gap-2 mb-4">
@@ -737,6 +753,16 @@ makeGs1128Card('es2-paths', {
   { label: 'TriALTIS pre-lordosed rod 5.5×85 (REF 5560553085TS)', gtin: '10705034591407', lot: 'CSAEUD', expiry: '350630' },
   { label: 'EIT LLIF cage H16/16°/50×22 (REF LHI71650)', gtin: '04260567833490', lot: 'E20CL0743', expiry: '251031' },
 ].forEach(function(d) { makeGtinCard('photo-scans', d); });
+
+// ACDF test case (2026-11-04): Ozark plate + 4 Ozark plate screws + Tritanium C cage.
+[
+  { label: 'Ozark plate, 1 level, 24 mm (REF AA01-41F24V-G1)',            gtin: '10888857416178', lot: '2FK2-001',    expiry: '310312' },
+  { label: 'Tritanium C cage 14×12×5 mm (REF 48982056)',                  gtin: '07613327360035', lot: '594K1',       expiry: '310520' },
+  { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw 1', gtin: '10888857408319', lot: 'PVFC-499882', expiry: '270424' },
+  { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw 2', gtin: '10888857408319', lot: 'VWAY-524503', expiry: '280101' },
+  { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw 3', gtin: '10888857408319', lot: 'VWAY-524503', expiry: '280101' },
+  { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw 4', gtin: '10888857408319', lot: 'PVFC-499882', expiry: '270424' },
+].forEach(function(d) { makeGtinCard('acdf-ozark-scans', d); });
 
 // Not-found test
 makeGtinCard('not-found', {
