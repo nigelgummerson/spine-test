@@ -297,6 +297,15 @@
       <li>Reopen the plate and change the span to C4&ndash;C5: Update is blocked (wrong span for the scanned plate).</li>
     </ol>
     <div id="acdf-ozark-2level-scans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
+
+    <h3 class="text-base font-semibold text-slate-700 mb-2">Cage screws</h3>
+    <p class="text-sm text-slate-600 mb-3">An AVS Anchor-C cage with two of its screws, and a Zero-P screw. Lots and expiry dates are made up; the GTINs are real catalogue entries.</p>
+    <ol class="list-decimal ms-5 text-sm text-slate-600 mb-4 space-y-1">
+      <li>Cage &rarr; Place new at a cervical disc level.</li>
+      <li>Each Anchor-C screw shows as "Cage screw" with "Add to Cage {level}", never a pedicle position. After adding, reopen the cage: both screws are listed.</li>
+      <li>The Zero-P screw also shows as a cage screw, and says the cage must be placed first (no Zero-P cage in this set).</li>
+    </ol>
+    <div id="cage-screw-scans" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 mb-6"></div>
   </section>
 
   <!-- Medtronic section -->
@@ -782,6 +791,14 @@ makeGs1128Card('es2-paths', {
     return { label: 'Ozark variable screw Ø4.0×12 (REF 8801-04012CA-G1), screw ' + n, gtin: '10888857408319', lot: 'TEST-SCR-0' + n, expiry: '290101' };
   }))
   .forEach(function(d) { makeGtinCard('acdf-ozark-2level-scans', d); });
+
+// Cage screws (2026-11-04): AVS Anchor-C cage + two anchors, and a Zero-P screw. Lots are invented.
+[
+  { label: 'AVS Anchor-C cage 14×6 mm (REF 48321060)',                gtin: '04546540679321', lot: 'TEST-AVS-C1', expiry: '310312' },
+  { label: 'AVS Anchor-C screw Ø3.5×12 (REF 48325312), screw 1',      gtin: '04546540679765', lot: 'TEST-ANC-01', expiry: '310312' },
+  { label: 'AVS Anchor-C screw Ø3.5×12 (REF 48325312), screw 2',      gtin: '04546540679765', lot: 'TEST-ANC-02', expiry: '310312' },
+  { label: 'Zero-P screw Ø3×12 (REF 04.617.812)',                     gtin: '07611819935075', lot: 'TEST-ZP-01',  expiry: '310312' },
+].forEach(function(d) { makeGtinCard('cage-screw-scans', d); });
 
 // Not-found test
 makeGtinCard('not-found', {
