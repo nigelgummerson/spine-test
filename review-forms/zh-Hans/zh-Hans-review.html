@@ -203,7 +203,7 @@
         </div>
         <div class="progress-bar">
             <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
-            <div class="progress-text" id="progress-text">0 of 1321 items reviewed (0%)</div>
+            <div class="progress-text" id="progress-text">0 of 1322 items reviewed (0%)</div>
             <div class="save-hint" id="save-hint"></div>
         </div>
     </div>
@@ -226,7 +226,7 @@
             <div class="nav-sections">
                 <a href="#section-0" class="nav-link" data-section="0">App Header &amp; Sidebar <span class="nav-count" id="nav-count-0">0/90</span></a>
             <a href="#section-1" class="nav-link" data-section="1">Patient Demographics <span class="nav-count" id="nav-count-1">0/32</span></a>
-            <a href="#section-2" class="nav-link" data-section="2">Implant Modal: Screws, Hooks &amp; Bands <span class="nav-count" id="nav-count-2">0/95</span></a>
+            <a href="#section-2" class="nav-link" data-section="2">Implant Modal: Screws, Hooks &amp; Bands <span class="nav-count" id="nav-count-2">0/96</span></a>
             <a href="#section-3" class="nav-link" data-section="3">Cage Modal: Interbody Cages <span class="nav-count" id="nav-count-3">0/57</span></a>
             <a href="#section-4" class="nav-link" data-section="4">Osteotomy Modal <span class="nav-count" id="nav-count-4">0/32</span></a>
             <a href="#section-5" class="nav-link" data-section="5">Force Modal <span class="nav-count" id="nav-count-5">0/7</span></a>
@@ -5120,6 +5120,39 @@
                 <div class="col-comment">
                     <label>Comment <span class="optional">(optional)</span></label>
                     <input type="text" class="comment-field" data-key="modal.screw.add_screws" placeholder="Any notes for the developer...">
+                </div>
+            </div>
+        </div>
+        <div class="review-item" data-key="modal.screw.add_then" data-section="2" id="item-modal.screw.add_then">
+            <div class="item-header">
+                <code class="key-label">modal.screw.add_then</code>
+                <span class="hint placeholder-hint">Contains {placeholders}: keep braces intact</span>
+            </div>
+            <div class="item-grid">
+                <div class="col-english">
+                    <label>English</label>
+                    <div class="english-text">{action}, then {dest}</div>
+                </div>
+                <div class="col-translation">
+                    <label>zh-Hans</label>
+                    <textarea class="translation-field" data-key="modal.screw.add_then" data-original="{action}，然后 {dest}">{action}，然后 {dest}</textarea>
+                </div>
+                <div class="col-status">
+                    <label>Status</label>
+                    <div class="status-radios">
+                        <label class="radio-label correct-label">
+                            <input type="radio" name="status-modal.screw.add_then" value="correct" data-key="modal.screw.add_then">
+                            <span>Correct</span>
+                        </label>
+                        <label class="radio-label corrected-label">
+                            <input type="radio" name="status-modal.screw.add_then" value="corrected" data-key="modal.screw.add_then">
+                            <span>Corrected</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-comment">
+                    <label>Comment <span class="optional">(optional)</span></label>
+                    <input type="text" class="comment-field" data-key="modal.screw.add_then" placeholder="Any notes for the developer...">
                 </div>
             </div>
         </div>
@@ -18401,11 +18434,11 @@
             <div class="item-grid">
                 <div class="col-english">
                     <label>English</label>
-                    <div class="english-text">&lt;strong&gt;Dialogs:&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; add or update, &lt;strong&gt;Escape&lt;/strong&gt; close (asks before discarding a change), &lt;strong&gt;Delete&lt;/strong&gt; remove; Remove keeps the dialog open. &lt;strong&gt;Implant dialog:&lt;/strong&gt; &lt;strong&gt;Alt+↑&lt;/strong&gt; / &lt;strong&gt;Alt+↓&lt;/strong&gt; up or down a level, &lt;strong&gt;Alt+←&lt;/strong&gt; / &lt;strong&gt;Alt+→&lt;/strong&gt; other side. &lt;strong&gt;Scroll wheel&lt;/strong&gt; over dropdowns to cycle values.&lt;br/&gt;&lt;strong&gt;Views:&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt; cervical, &lt;strong&gt;L&lt;/strong&gt; lumbar, &lt;strong&gt;T&lt;/strong&gt; thoracolumbar, &lt;strong&gt;W&lt;/strong&gt; whole spine, &lt;strong&gt;P&lt;/strong&gt; pelvis.&lt;br/&gt;&lt;strong&gt;Tools:&lt;/strong&gt; &lt;strong&gt;I&lt;/strong&gt; implant, &lt;strong&gt;R&lt;/strong&gt; rod, &lt;strong&gt;N&lt;/strong&gt; note, &lt;strong&gt;X&lt;/strong&gt; crosslink, &lt;strong&gt;U&lt;/strong&gt; unstable, &lt;strong&gt;D&lt;/strong&gt; decompression, &lt;strong&gt;Q&lt;/strong&gt; quick add. Osteotomy, corpectomy, and artificial disc replacement are reached by clicking on the vertebral body or disc space — no keyboard shortcut.&lt;br/&gt;&lt;strong&gt;Chart navigation:&lt;/strong&gt; &lt;strong&gt;Arrow keys&lt;/strong&gt; move a focus ring across vertebrae and zones (left / mid / right); &lt;strong&gt;Enter&lt;/strong&gt; or &lt;strong&gt;Space&lt;/strong&gt; activates the focused zone (same as clicking it); &lt;strong&gt;Escape&lt;/strong&gt; clears the focus.&lt;br/&gt;&lt;strong&gt;Actions:&lt;/strong&gt; &lt;strong&gt;F&lt;/strong&gt; fullscreen, &lt;strong&gt;S&lt;/strong&gt; save, &lt;strong&gt;E&lt;/strong&gt; export, &lt;strong&gt;,&lt;/strong&gt; preferences, &lt;strong&gt;?&lt;/strong&gt; help, &lt;strong&gt;Cmd/Ctrl+Z&lt;/strong&gt; undo, &lt;strong&gt;Cmd/Ctrl+Shift+Z&lt;/strong&gt; or &lt;strong&gt;Cmd/Ctrl+Y&lt;/strong&gt; redo.&lt;br/&gt;&lt;strong&gt;Portrait view:&lt;/strong&gt; &lt;strong&gt;1–4&lt;/strong&gt; switch tab; swipe between tabs.</div>
+                    <div class="english-text">&lt;strong&gt;Dialogs:&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; add or update, &lt;strong&gt;Escape&lt;/strong&gt; close (asks before discarding a change), &lt;strong&gt;Delete&lt;/strong&gt; remove; Remove keeps the dialog open. &lt;strong&gt;Implant dialog:&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; add, then down a level, &lt;strong&gt;Shift+Enter&lt;/strong&gt; add, then up a level; &lt;strong&gt;Alt+↑&lt;/strong&gt; / &lt;strong&gt;Alt+↓&lt;/strong&gt; up or down a level, &lt;strong&gt;Alt+←&lt;/strong&gt; / &lt;strong&gt;Alt+→&lt;/strong&gt; other side. &lt;strong&gt;Scroll wheel&lt;/strong&gt; over dropdowns to cycle values.&lt;br/&gt;&lt;strong&gt;Views:&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt; cervical, &lt;strong&gt;L&lt;/strong&gt; lumbar, &lt;strong&gt;T&lt;/strong&gt; thoracolumbar, &lt;strong&gt;W&lt;/strong&gt; whole spine, &lt;strong&gt;P&lt;/strong&gt; pelvis.&lt;br/&gt;&lt;strong&gt;Tools:&lt;/strong&gt; &lt;strong&gt;I&lt;/strong&gt; implant, &lt;strong&gt;R&lt;/strong&gt; rod, &lt;strong&gt;N&lt;/strong&gt; note, &lt;strong&gt;X&lt;/strong&gt; crosslink, &lt;strong&gt;U&lt;/strong&gt; unstable, &lt;strong&gt;D&lt;/strong&gt; decompression, &lt;strong&gt;Q&lt;/strong&gt; quick add. Osteotomy, corpectomy, and artificial disc replacement are reached by clicking on the vertebral body or disc space — no keyboard shortcut.&lt;br/&gt;&lt;strong&gt;Chart navigation:&lt;/strong&gt; &lt;strong&gt;Arrow keys&lt;/strong&gt; move a focus ring across vertebrae and zones (left / mid / right); &lt;strong&gt;Enter&lt;/strong&gt; or &lt;strong&gt;Space&lt;/strong&gt; activates the focused zone (same as clicking it); &lt;strong&gt;Escape&lt;/strong&gt; clears the focus.&lt;br/&gt;&lt;strong&gt;Actions:&lt;/strong&gt; &lt;strong&gt;F&lt;/strong&gt; fullscreen, &lt;strong&gt;S&lt;/strong&gt; save, &lt;strong&gt;E&lt;/strong&gt; export, &lt;strong&gt;,&lt;/strong&gt; preferences, &lt;strong&gt;?&lt;/strong&gt; help, &lt;strong&gt;Cmd/Ctrl+Z&lt;/strong&gt; undo, &lt;strong&gt;Cmd/Ctrl+Shift+Z&lt;/strong&gt; or &lt;strong&gt;Cmd/Ctrl+Y&lt;/strong&gt; redo.&lt;br/&gt;&lt;strong&gt;Portrait view:&lt;/strong&gt; &lt;strong&gt;1–4&lt;/strong&gt; switch tab; swipe between tabs.</div>
                 </div>
                 <div class="col-translation">
                     <label>zh-Hans</label>
-                    <textarea class="translation-field" data-key="help.shortcuts.body" data-original="&lt;strong&gt;对话框：&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; 添加或更新，&lt;strong&gt;Escape&lt;/strong&gt; 关闭（放弃更改前会先询问），&lt;strong&gt;Delete&lt;/strong&gt; 删除；删除后对话框保持打开。&lt;strong&gt;内植物对话框：&lt;/strong&gt; &lt;strong&gt;Alt+↑&lt;/strong&gt; / &lt;strong&gt;Alt+↓&lt;/strong&gt; 上移或下移一个节段，&lt;strong&gt;Alt+←&lt;/strong&gt; / &lt;strong&gt;Alt+→&lt;/strong&gt; 对侧。&lt;strong&gt;Scroll wheel&lt;/strong&gt; 在下拉列表上滚动可循环切换值。&lt;br/&gt;&lt;strong&gt;视图：&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt; 颈椎，&lt;strong&gt;L&lt;/strong&gt; 腰椎，&lt;strong&gt;T&lt;/strong&gt; 胸腰椎，&lt;strong&gt;W&lt;/strong&gt; 全脊柱，&lt;strong&gt;P&lt;/strong&gt; 骨盆。&lt;br/&gt;&lt;strong&gt;工具：&lt;/strong&gt; &lt;strong&gt;I&lt;/strong&gt; 内植物，&lt;strong&gt;R&lt;/strong&gt; 棒，&lt;strong&gt;N&lt;/strong&gt; 备注，&lt;strong&gt;X&lt;/strong&gt; 横连接，&lt;strong&gt;U&lt;/strong&gt; 不稳定，&lt;strong&gt;D&lt;/strong&gt; 减压，&lt;strong&gt;Q&lt;/strong&gt; 快速添加。截骨术、椎体次全切除和人工椎间盘置换通过点击椎体或椎间盘间隙来调用，无键盘快捷键。&lt;br/&gt;&lt;strong&gt;图表导航：&lt;/strong&gt; &lt;strong&gt;方向键&lt;/strong&gt;在椎体和区域（左 / 中 / 右）间移动焦点环；&lt;strong&gt;Enter&lt;/strong&gt; 或 &lt;strong&gt;Space&lt;/strong&gt; 激活当前焦点区域（与点击效果相同）；&lt;strong&gt;Escape&lt;/strong&gt; 清除焦点。&lt;br/&gt;&lt;strong&gt;操作：&lt;/strong&gt; &lt;strong&gt;F&lt;/strong&gt; 全屏，&lt;strong&gt;S&lt;/strong&gt; 保存，&lt;strong&gt;E&lt;/strong&gt; 导出，&lt;strong&gt;,&lt;/strong&gt; 偏好设置，&lt;strong&gt;?&lt;/strong&gt; 帮助，&lt;strong&gt;Cmd/Ctrl+Z&lt;/strong&gt; 撤销，&lt;strong&gt;Cmd/Ctrl+Shift+Z&lt;/strong&gt; 或 &lt;strong&gt;Cmd/Ctrl+Y&lt;/strong&gt; 重做。&lt;br/&gt;&lt;strong&gt;竖屏视图：&lt;/strong&gt; &lt;strong&gt;1–4&lt;/strong&gt; 切换标签；左右滑动切换标签。">&lt;strong&gt;对话框：&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; 添加或更新，&lt;strong&gt;Escape&lt;/strong&gt; 关闭（放弃更改前会先询问），&lt;strong&gt;Delete&lt;/strong&gt; 删除；删除后对话框保持打开。&lt;strong&gt;内植物对话框：&lt;/strong&gt; &lt;strong&gt;Alt+↑&lt;/strong&gt; / &lt;strong&gt;Alt+↓&lt;/strong&gt; 上移或下移一个节段，&lt;strong&gt;Alt+←&lt;/strong&gt; / &lt;strong&gt;Alt+→&lt;/strong&gt; 对侧。&lt;strong&gt;Scroll wheel&lt;/strong&gt; 在下拉列表上滚动可循环切换值。&lt;br/&gt;&lt;strong&gt;视图：&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt; 颈椎，&lt;strong&gt;L&lt;/strong&gt; 腰椎，&lt;strong&gt;T&lt;/strong&gt; 胸腰椎，&lt;strong&gt;W&lt;/strong&gt; 全脊柱，&lt;strong&gt;P&lt;/strong&gt; 骨盆。&lt;br/&gt;&lt;strong&gt;工具：&lt;/strong&gt; &lt;strong&gt;I&lt;/strong&gt; 内植物，&lt;strong&gt;R&lt;/strong&gt; 棒，&lt;strong&gt;N&lt;/strong&gt; 备注，&lt;strong&gt;X&lt;/strong&gt; 横连接，&lt;strong&gt;U&lt;/strong&gt; 不稳定，&lt;strong&gt;D&lt;/strong&gt; 减压，&lt;strong&gt;Q&lt;/strong&gt; 快速添加。截骨术、椎体次全切除和人工椎间盘置换通过点击椎体或椎间盘间隙来调用，无键盘快捷键。&lt;br/&gt;&lt;strong&gt;图表导航：&lt;/strong&gt; &lt;strong&gt;方向键&lt;/strong&gt;在椎体和区域（左 / 中 / 右）间移动焦点环；&lt;strong&gt;Enter&lt;/strong&gt; 或 &lt;strong&gt;Space&lt;/strong&gt; 激活当前焦点区域（与点击效果相同）；&lt;strong&gt;Escape&lt;/strong&gt; 清除焦点。&lt;br/&gt;&lt;strong&gt;操作：&lt;/strong&gt; &lt;strong&gt;F&lt;/strong&gt; 全屏，&lt;strong&gt;S&lt;/strong&gt; 保存，&lt;strong&gt;E&lt;/strong&gt; 导出，&lt;strong&gt;,&lt;/strong&gt; 偏好设置，&lt;strong&gt;?&lt;/strong&gt; 帮助，&lt;strong&gt;Cmd/Ctrl+Z&lt;/strong&gt; 撤销，&lt;strong&gt;Cmd/Ctrl+Shift+Z&lt;/strong&gt; 或 &lt;strong&gt;Cmd/Ctrl+Y&lt;/strong&gt; 重做。&lt;br/&gt;&lt;strong&gt;竖屏视图：&lt;/strong&gt; &lt;strong&gt;1–4&lt;/strong&gt; 切换标签；左右滑动切换标签。</textarea>
+                    <textarea class="translation-field" data-key="help.shortcuts.body" data-original="&lt;strong&gt;对话框：&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; 添加或更新，&lt;strong&gt;Escape&lt;/strong&gt; 关闭（放弃更改前会先询问），&lt;strong&gt;Delete&lt;/strong&gt; 删除；删除后对话框保持打开。&lt;strong&gt;内植物对话框：&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; 添加，然后下移一个节段, &lt;strong&gt;Shift+Enter&lt;/strong&gt; 添加，然后上移一个节段；&lt;strong&gt;Alt+↑&lt;/strong&gt; / &lt;strong&gt;Alt+↓&lt;/strong&gt; 上移或下移一个节段，&lt;strong&gt;Alt+←&lt;/strong&gt; / &lt;strong&gt;Alt+→&lt;/strong&gt; 对侧。&lt;strong&gt;Scroll wheel&lt;/strong&gt; 在下拉列表上滚动可循环切换值。&lt;br/&gt;&lt;strong&gt;视图：&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt; 颈椎，&lt;strong&gt;L&lt;/strong&gt; 腰椎，&lt;strong&gt;T&lt;/strong&gt; 胸腰椎，&lt;strong&gt;W&lt;/strong&gt; 全脊柱，&lt;strong&gt;P&lt;/strong&gt; 骨盆。&lt;br/&gt;&lt;strong&gt;工具：&lt;/strong&gt; &lt;strong&gt;I&lt;/strong&gt; 内植物，&lt;strong&gt;R&lt;/strong&gt; 棒，&lt;strong&gt;N&lt;/strong&gt; 备注，&lt;strong&gt;X&lt;/strong&gt; 横连接，&lt;strong&gt;U&lt;/strong&gt; 不稳定，&lt;strong&gt;D&lt;/strong&gt; 减压，&lt;strong&gt;Q&lt;/strong&gt; 快速添加。截骨术、椎体次全切除和人工椎间盘置换通过点击椎体或椎间盘间隙来调用，无键盘快捷键。&lt;br/&gt;&lt;strong&gt;图表导航：&lt;/strong&gt; &lt;strong&gt;方向键&lt;/strong&gt;在椎体和区域（左 / 中 / 右）间移动焦点环；&lt;strong&gt;Enter&lt;/strong&gt; 或 &lt;strong&gt;Space&lt;/strong&gt; 激活当前焦点区域（与点击效果相同）；&lt;strong&gt;Escape&lt;/strong&gt; 清除焦点。&lt;br/&gt;&lt;strong&gt;操作：&lt;/strong&gt; &lt;strong&gt;F&lt;/strong&gt; 全屏，&lt;strong&gt;S&lt;/strong&gt; 保存，&lt;strong&gt;E&lt;/strong&gt; 导出，&lt;strong&gt;,&lt;/strong&gt; 偏好设置，&lt;strong&gt;?&lt;/strong&gt; 帮助，&lt;strong&gt;Cmd/Ctrl+Z&lt;/strong&gt; 撤销，&lt;strong&gt;Cmd/Ctrl+Shift+Z&lt;/strong&gt; 或 &lt;strong&gt;Cmd/Ctrl+Y&lt;/strong&gt; 重做。&lt;br/&gt;&lt;strong&gt;竖屏视图：&lt;/strong&gt; &lt;strong&gt;1–4&lt;/strong&gt; 切换标签；左右滑动切换标签。">&lt;strong&gt;对话框：&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; 添加或更新，&lt;strong&gt;Escape&lt;/strong&gt; 关闭（放弃更改前会先询问），&lt;strong&gt;Delete&lt;/strong&gt; 删除；删除后对话框保持打开。&lt;strong&gt;内植物对话框：&lt;/strong&gt; &lt;strong&gt;Enter&lt;/strong&gt; 添加，然后下移一个节段, &lt;strong&gt;Shift+Enter&lt;/strong&gt; 添加，然后上移一个节段；&lt;strong&gt;Alt+↑&lt;/strong&gt; / &lt;strong&gt;Alt+↓&lt;/strong&gt; 上移或下移一个节段，&lt;strong&gt;Alt+←&lt;/strong&gt; / &lt;strong&gt;Alt+→&lt;/strong&gt; 对侧。&lt;strong&gt;Scroll wheel&lt;/strong&gt; 在下拉列表上滚动可循环切换值。&lt;br/&gt;&lt;strong&gt;视图：&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt; 颈椎，&lt;strong&gt;L&lt;/strong&gt; 腰椎，&lt;strong&gt;T&lt;/strong&gt; 胸腰椎，&lt;strong&gt;W&lt;/strong&gt; 全脊柱，&lt;strong&gt;P&lt;/strong&gt; 骨盆。&lt;br/&gt;&lt;strong&gt;工具：&lt;/strong&gt; &lt;strong&gt;I&lt;/strong&gt; 内植物，&lt;strong&gt;R&lt;/strong&gt; 棒，&lt;strong&gt;N&lt;/strong&gt; 备注，&lt;strong&gt;X&lt;/strong&gt; 横连接，&lt;strong&gt;U&lt;/strong&gt; 不稳定，&lt;strong&gt;D&lt;/strong&gt; 减压，&lt;strong&gt;Q&lt;/strong&gt; 快速添加。截骨术、椎体次全切除和人工椎间盘置换通过点击椎体或椎间盘间隙来调用，无键盘快捷键。&lt;br/&gt;&lt;strong&gt;图表导航：&lt;/strong&gt; &lt;strong&gt;方向键&lt;/strong&gt;在椎体和区域（左 / 中 / 右）间移动焦点环；&lt;strong&gt;Enter&lt;/strong&gt; 或 &lt;strong&gt;Space&lt;/strong&gt; 激活当前焦点区域（与点击效果相同）；&lt;strong&gt;Escape&lt;/strong&gt; 清除焦点。&lt;br/&gt;&lt;strong&gt;操作：&lt;/strong&gt; &lt;strong&gt;F&lt;/strong&gt; 全屏，&lt;strong&gt;S&lt;/strong&gt; 保存，&lt;strong&gt;E&lt;/strong&gt; 导出，&lt;strong&gt;,&lt;/strong&gt; 偏好设置，&lt;strong&gt;?&lt;/strong&gt; 帮助，&lt;strong&gt;Cmd/Ctrl+Z&lt;/strong&gt; 撤销，&lt;strong&gt;Cmd/Ctrl+Shift+Z&lt;/strong&gt; 或 &lt;strong&gt;Cmd/Ctrl+Y&lt;/strong&gt; 重做。&lt;br/&gt;&lt;strong&gt;竖屏视图：&lt;/strong&gt; &lt;strong&gt;1–4&lt;/strong&gt; 切换标签；左右滑动切换标签。</textarea>
                 </div>
                 <div class="col-status">
                     <label>Status</label>
@@ -44060,7 +44093,7 @@ Portrait mode gives each column more vertical space, showing the full spine with
     (function() {
         const LANG = "zh-Hans";
         const STORAGE_KEY = "spine_review_" + LANG;
-        const TOTAL = 1321;
+        const TOTAL = 1322;
 
         // --- Reviewer details ---
 
