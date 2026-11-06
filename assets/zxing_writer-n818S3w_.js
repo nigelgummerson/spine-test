@@ -1,0 +1,1 @@
+var e=`/spine-test/assets/zxing_writer-NQHybxPU.wasm`;export{e as default};

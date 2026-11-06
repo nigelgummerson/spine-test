@@ -211,7 +211,7 @@
                     <h2 class="sec" data-i18n="what_title">What This App Does</h2>
                     <p class="body-p" data-i18n="what_p1">A digital documentation tool for spinal surgery instrumentation. Records the pre-operative plan and post-operative construct, replacing hand-drawn diagrams with a structured, exportable format.</p>
                     <p class="body-p" data-i18n="what_p2">Runs offline in any modern browser with no installation, no server, no network required. Available as a web app (plan.skeletalsurgery.com/spine) or standalone HTML file for USB/email distribution.</p>
-                    <p class="body-p" data-i18n="what_p3">Exports to JPG, PDF (A4), and structured JSON for clinical records.</p>
+                    <p class="body-p" data-i18n="what_p3">Exports to PDF (A4) and structured JSON for clinical records.</p>
                 </div>
             </section>
 
@@ -241,9 +241,9 @@
                         <li data-i18n="feat_movetolevel">Move-to-level: change a placement's anatomical level from inside its modal without losing scan or annotation data; cervical &#8596; lumbar moves are blocked for plates, cages, and discs</li>
                         <li data-i18n="feat_lock">Record locking (Finalise Record): prevents accidental edits to finalised records</li>
                         <li data-i18n="feat_clearcon">Clear Construct button: reset the surgical record without affecting the plan</li>
-                        <li data-i18n="feat_inventory">Auto-generated implant inventory with summary totals, grouped by screw system, auto-shrunk to fit the export sheet</li>
+                        <li data-i18n="feat_inventory">Auto-generated implant inventory with summary totals, grouped by screw system, summarised on the first page, with the full list and implant identifiers on the pages after</li>
                         <li data-i18n="feat_themes">10 colour themes (5 corporate-branded + 4 dark + default)</li>
-                        <li data-i18n="feat_export">Export as JPG, PDF (A4, 400 DPI, with embedded clickable case link), or JSON (with UUID, audit timestamps, and barcode traceability)</li>
+                        <li data-i18n="feat_export">Export as PDF (A4, 400 DPI, with embedded clickable case link; implant identifiers continue on extra pages) or JSON (with UUID, audit timestamps, and barcode traceability)</li>
                         <li data-i18n="feat_encryption">Encryption at rest: the cached case is automatically encrypted with a per-browser AES-GCM 256-bit key stored as non-extractable in IndexedDB. No user passphrase. Clearing site data deletes the key and the cache becomes unrecoverable.</li>
                         <li data-i18n="feat_sharelink">Share Link: a self-contained URL that encodes a PII-stripped copy of the case in the URL hash fragment (compressed, not encrypted; treat as an email attachment)</li>
                         <li data-i18n="feat_dualwindow">Dual-window sync for theatre displays via BroadcastChannel: state, theme, language, view, and Privacy Mode all sync between windows</li>
@@ -264,7 +264,7 @@
                         <li data-i18n="step6">Click on the vertebral body (midline) and the popover offers Osteotomy (PSO, VCR over one or more vertebrae) or Corpectomy (body resection + reconstruction cage)</li>
                         <li data-i18n="step7">Pre-scan implants if available: UDI scans land in the Case Scan Pool and auto-fill the next matching modal</li>
                         <li data-i18n="step8">After surgery, switch to the Final Record column and confirm or adjust planned placements (planned items appear as ghosts)</li>
-                        <li data-i18n="step9">Export as JPG, PDF (A4, with embedded case link), or save as JSON; lock with Finalise Record when complete</li>
+                        <li data-i18n="step9">Export as PDF (A4, with embedded case link), or save as JSON; lock with Finalise Record when complete</li>
                     </ol>
                 </div>
             </section>

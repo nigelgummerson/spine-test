@@ -1,0 +1,1 @@
+var e={"10705034605739":{s:`VIPER PRIME`,t:`screw`,c:`697100117`,n:`DePuy Synthes`,z:`MOD VIPER PRIME SCREW CAP`}};export{e as default};
