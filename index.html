@@ -9,15 +9,12 @@
         <meta name="color-scheme" content="light" />
         <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; connect-src 'self' ws:; worker-src 'self' blob:; frame-ancestors 'none'; object-src 'none'; base-uri 'self';" />
-        <!-- Privacy posture for ?data= case links -->
-        <!-- The PDF export embeds case URLs as `?data=...#data=...` so Acrobat (which strips fragments) -->
-        <!-- can still open them. The query-string copy is logged by the server; these meta tags reduce -->
-        <!-- the residual exposure: no-referrer prevents the URL leaking onward via Referer headers, and -->
-        <!-- no-store discourages local browser caching of the loaded page. Server-side logs are not -->
-        <!-- mitigated — see docs/clinical-safety/dpia.md for the documented residual risk. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval'; connect-src 'self'; worker-src 'self' blob:; frame-ancestors 'none'; object-src 'none'; base-uri 'self';" />
+        <!-- Case links carry the case in the URL fragment, which is never sent to a server. -->
+        <!-- no-referrer stops the URL leaking onward in Referer headers; no-store discourages -->
+        <!-- the browser from caching the loaded page. -->
         <meta name="referrer" content="no-referrer" />
         <meta http-equiv="Cache-Control" content="no-store" />
         <title>Skeletal Plan | Spinal Instrumentation Plan &amp; Record</title>
@@ -74,9 +71,9 @@
             "inLanguage": ["en","ar","da","de","el","es","fi","fr","he","hi","it","ja","ko","nb","nl","pl","pt","ru","sv","tr","uk","zh-Hans"]
         }
         </script>
-      <script type="module" crossorigin src="/spine-test/assets/index-xbu9TYPA.js"></script>
+      <script type="module" crossorigin src="/spine-test/assets/index-DQSYpWyu.js"></script>
       <link rel="modulepreload" crossorigin href="/spine-test/assets/rolldown-runtime-QTnfLwEv.js">
-      <link rel="stylesheet" crossorigin href="/spine-test/assets/index-BdPTwyMl.css">
+      <link rel="stylesheet" crossorigin href="/spine-test/assets/index-PH18kB4W.css">
     </head>
     <body class="text-slate-800">
         <div id="root" class="h-[100svh] w-screen flex flex-col"></div>
